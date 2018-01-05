@@ -10,15 +10,15 @@ On the other hand, DynamoDB integration with node.js is painless.
 
 ## Integration with node.js
 
-    ```node.js
-	exports.handler = function (event, context, callback) {
-	    const alexa = Alexa.handler(event, context, callback);
-	    alexa.appId = appId;
-	    alexa.dynamoDBTableName = 'YourTableName';
-	    alexa.registerHandlers( ... );
-	    alexa.execute();
-	};
-    ```
+```node
+exports.handler = function (event, context, callback) {
+    const alexa = Alexa.handler(event, context, callback);
+    alexa.appId = appId;
+    alexa.dynamoDBTableName = 'YourTableName';
+    alexa.registerHandlers( ... );
+    alexa.execute();
+};
+```
 
 That one line of code is all that's needed!
 
@@ -26,7 +26,7 @@ That one line of code is all that's needed!
 
 Best to allocate 'YourTableName' manually rather than give Create permission.
 
-[The table key must be named 'userId'.]
+[The table key must be named `userId`.]
 
 Restrict access as follows:
 
@@ -50,7 +50,7 @@ The release announcement:
 
     http://www.allthingsdistributed.com/2012/01/amazon-dynamodb.html
 
-The White Paper:
+The White Paper (included here):
 
     http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf
 
