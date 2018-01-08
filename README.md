@@ -18,8 +18,8 @@ So in a way, boredom was __invented__ by Charles Dickens. This may not come as a
 to anyone who has ever been required to read one of his very lengthy works!
 
 (This is not a knock on Dickens: I have actually read Bleak House - and I wasn't required
-to, so I guess I was reading for pleasure. My point is that actually requiring anyone to
-read ___anything___ is probably a good way to make sure they don't enjoy the experience.
+to do so, so I guess I was reading for pleasure. My point is that actually requiring anyone
+to read ___anything___ is probably a good way to make sure they don't enjoy the experience.
 A better route to go is to ___ban___ the book; our library had a week of ___banned books___
 once - and I was very surprised to find that I had aleady read at least half of them.
 `Of Mice and Men`, `The Adventures of Tom Sawyer`, `Adventures of Huckleberry Finn` or
