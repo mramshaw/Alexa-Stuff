@@ -17,7 +17,7 @@ For instance, according to Alexa:
 So in a way, boredom was __invented__ by Charles Dickens. This may not come as a surprise
 to anyone who has ever been required to read one of his very lengthy works!
 
-(This is not a knock on Dickens: I have actually read Bleak House - and I wasn't required
+[This is not a knock on Dickens: I have actually read Bleak House - and I wasn't required
 to do so, so I guess I was reading for pleasure. My point is that actually requiring anyone
 to read ___anything___ is probably a good way to make sure they don't enjoy the experience.
 A better route to go is to ___ban___ the book; our library had a week of banned books
@@ -26,7 +26,7 @@ once - and I was very surprised to find that I had aleady read at least half of 
 `The Catcher in the Rye`, anyone? Recently I very much enjoyed `The Curious Incident of
 the Dog in the Night-Time` (recommended by a librarian). All, at one time or another,
 banned. It seems that pretty much everything that is worth reading has been banned at
-one time or another.)
+one time or another.]
 
 #### Wake Word
 
