@@ -24,8 +24,9 @@ A better route to go is to ___ban___ the book; our library had a week of ___bann
 once - and I was very surprised to find that I had aleady read at least half of them.
 `Of Mice and Men`, `The Adventures of Tom Sawyer`, `Adventures of Huckleberry Finn` or
 `The Catcher in the Rye`, anyone? Recently I very much enjoyed `The Curious Incident of
-the Dog in the Night-Time`. All, at one time or another, banned. It seems that pretty
-much everything that is worth reading has been banned at one time or aonother.)
+the Dog in the Night-Time` (recommended by a librarian). All, at one time or another,
+banned. It seems that pretty much everything that is worth reading has been banned at
+one time or another.)
 
 #### Wake Word
 
