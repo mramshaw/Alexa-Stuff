@@ -41,6 +41,27 @@ To change it to something else, either open up the Alexa app on your device and 
 there or else head to [echo.amazon.com](echo.amazon.com), sign in (you will need an Amazon
 account), and use the __Settings__ panel to change it.
 
+#### Alexa Slots
+
+While Alexa has some very useful built-in slots, it's probably a 'best practice' to define
+custom slots. For one thing, the built-in slots are extensive and it is probably a good
+idea to restrict these quite a bit. Follow the following link for some useful tips on
+[formatting slot values](https://developer.amazon.com/docs/custom-skills/define-the-interaction-model-in-json-and-text.html#cert-custom-slot-types).
+
+#### Memory Usage
+
+The smallest possible allocation for a Lambda Function is 128 MB. So it is a good idea to
+use this as a target, rather than trying to minimize memory usage with procedural code.
+
+#### Logging
+
+Each invocation (a request or reponse) will generate 2 log events (a START event and an END
+event) so the urge to log every interesting user interaction is probably to be avoided.
+Even so, for debugging reasons it is important to log every __significant__ event (user
+responses, unhandled events, enough life cycle events for context). There is a rich market
+for logging analysis, which should be a warning to be careful about what gets logged - for
+privacy reasons, if not just to reduce the log clutter.
+
 #### Alexa versus Google’s Assistant
 
 Follow the link for an interesting read about
@@ -48,13 +69,6 @@ Follow the link for an interesting read about
 
 __tl;dr__ Information is contextual and nuanced, and relying verbatim on either of these
 devices is problematic.
-
-#### Alexa Slots
-
-While Alexa has some very useful built-in slots, it's probably a 'best practice' to define
-custom slots. For one thing, the built-in slots are extensive and it is probably a good
-idea to restrict these quite a bit. Follow the following link for some useful tips on
-[formatting slot values](https://developer.amazon.com/docs/custom-skills/define-the-interaction-model-in-json-and-text.html#cert-custom-slot-types).
 
 #### Icons
 
