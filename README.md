@@ -2,6 +2,15 @@
 
 ![Alexa Icon](/Images/alexaLogo2x._V516058141_.png)
 
+For placeholder game assets, I've experimented with TTS (Text to Speech) systems such
+as [Festival](http://www.cstr.ed.ac.uk/projects/festival/). Achieving natural-sounding
+results can be a lot of work. Good voice actors (for game dialogue) are expensive, and
+for good reason. A lot of work is required. TTS systems are not as much work, but the
+results are not anywhere near as realistic either.
+
+Alexa is impressive. While the regional voices vary in quality, they all sound fairly
+natural - with little of the robotic quality often found with TTS systems.
+
 ## Bits and bobs of stuff for Alexa development
 
 #### Trivia
@@ -88,4 +97,4 @@ Some sample Python code
 - [ ] Investigate [Alexa Load Testing](https://github.com/alexa/skill-sample-node-js-build-scale-test)
 - [ ] Investigate [Alexa Testing](https://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
 - [ ] Investigate [Virtual Alexa](https://github.com/bespoken/virtual-alexa) [also looks pretty spiffy]
-- [ ] Investigate Google’s Assistant
+- [x] Investigate Google’s Assistant
