@@ -4,10 +4,12 @@
 
 As a game developer, I've experimented with TTS (Text to Speech) systems such as
 [Festival](http://www.cstr.ed.ac.uk/projects/festival/) to produce game dialogue.
+
 Achieving natural-sounding results is a lot of work. Good voice actors are expensive,
 and for good reason. A lot of work is required. TTS systems are not as much work, but
 the results are not anywhere near as realistic either (generally placeholder quality
-only).
+only). For instance, while it is possible to get better results, the following link
+is an indication of the average quality of a [Festival TTS Voice](/Voices/gen_fest.wav).
 
 Alexa is impressive. While the regional voices vary in quality, they all sound fairly
 natural - with little of the robotic quality often found with TTS systems.
