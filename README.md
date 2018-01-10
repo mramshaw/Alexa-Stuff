@@ -67,12 +67,13 @@ use this as a target, rather than trying to minimize memory usage with procedura
 
 #### Logging
 
-Each invocation (a request or reponse) will generate 2 log events (a START event and an END
-event) so the urge to log every interesting user interaction is probably to be avoided.
-Even so, for debugging reasons it is important to log every __significant__ event (user
-responses, unhandled events, enough life cycle events for context). There is a rich market
-for logging analysis, which should be a warning to be careful about what gets logged - for
-privacy reasons, if not just to reduce the log clutter.
+Each invocation (a request or reponse) will generate 3 log events (a START event, an END
+event, and a REPORT event [basically the billing details]) so the urge to log each and every
+interesting user interaction is probably to be avoided. Even so, for debugging reasons it is
+important to log every __significant__ event (user responses, unhandled events, enough life
+cycle events for context). There is a rich market for logging analysis, which should be a
+warning to be careful about what gets logged - for privacy reasons, if not just to reduce
+the log clutter.
 
 #### Alexa versus Google’s Assistant
 
