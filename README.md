@@ -55,6 +55,25 @@ To change it to something else, either open up the Alexa app on your device and 
 there or else head to [echo.amazon.com](echo.amazon.com), sign in (you will need an Amazon
 account), and use the __Settings__ panel to change it.
 
+#### Alexa Intents
+
+While Alexa provides some very useful
+[Standard Built-in Intents](https://developer.amazon.com/docs/custom-skills/standard-built-in-intents.html#available-standard-built-in-intents)
+it may be a good idea to extend them with Standard Utterances as follows:
+
+    AMAZON.YesIntent okay
+
+If the __Audio Player__ option is checked, AMAZON.PauseIntent and AMAZON.ResumeIntent
+must be specified. Note that these refers to ___streaming___ audio, not normal audio
+such as playback and listening - which will both function correctly without the Audio
+Player option specified.
+
+For a good example of how __not__ to implement an audio-playing interface, try:
+
+    "Alexa, tell me something inspiring"
+
+[Neither "Pause" nor "Resume" seem to work correctly.]
+
 #### Alexa Slots
 
 While Alexa has some very useful built-in slots, it's probably a 'best practice' to define
