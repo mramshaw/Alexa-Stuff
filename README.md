@@ -64,8 +64,8 @@ it may be a good idea to extend them with Standard Utterances as follows:
     AMAZON.YesIntent okay
 
 If the __Audio Player__ option is checked, AMAZON.PauseIntent and AMAZON.ResumeIntent
-must be specified. Note that these refers to ___streaming___ audio, not normal audio
-such as playback and listening - which will both function correctly without the Audio
+must be specified. Note that these refer to ___streaming___ audio, not normal audio
+such as attending or playback - which will both function correctly without the Audio
 Player option specified.
 
 For a good example of how __not__ to implement an audio-playing interface, try:
