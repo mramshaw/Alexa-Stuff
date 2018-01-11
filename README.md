@@ -20,6 +20,8 @@ natural - with little of the robotic quality often found with TTS systems.
 
 There are Easter Eggs in Alexa:
 
+    "Alexa, what's on your mind?"
+
     "Alexa, tell me something"
 
 For instance, according to Alexa:
@@ -75,6 +77,18 @@ cycle events for context). There is a rich market for logging analysis, which sh
 warning to be careful about what gets logged - for privacy reasons, if not just to reduce
 the log clutter.
 
+#### Account Linking
+
+This refers to linking to an external (i.e. non-Amazon) account. It looks like standard OAuth.
+
+#### Permissions
+
+This refers to linking to an Amazon account. There are two groups: location (self-explanatory)
+and lists. Alexa customers have two default lists: __to-do__ and __shopping__. Access to these
+seems to be standard REST. There are two permissions: __read__ and __write__. Requests are throttled.
+Follow the link for the
+[Permissions API](https://developer.amazon.com/docs/custom-skills/access-the-alexa-shopping-and-to-do-lists.html#list-management-quick-reference).
+
 #### Alexa versus Google’s Assistant
 
 Follow the link for an interesting read about
@@ -95,8 +109,9 @@ Some sample Python code
 
 - [x] Investigate the use of [DynamoDB](https://aws.amazon.com/dynamodb/) as a back end
 - [x] Investigate the use of [Alexa Custom Slots](https://developer.amazon.com/docs/custom-skills/slot-type-reference.html)
-- [ ] Investigate the use of __Account Linking__ and __Permissions__
-- [ ] Investigate __Cloudwatch Event Logging__
+- [x] Investigate the use of __Account Linking__ and __Permissions__
+- [x] Investigate __Cloudwatch Event Logging__
+- [ ] Investigate __Cloudwatch Alerts__
 - [ ] Investigate [Alexa Automated Testing](https://github.com/alexa/skill-sample-nodejs-test-automation)
 - [ ] Investigate [Alexa Load Testing](https://github.com/alexa/skill-sample-node-js-build-scale-test)
 - [ ] Investigate [Alexa Testing](https://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
