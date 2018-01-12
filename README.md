@@ -134,5 +134,6 @@ Some sample Python code
 - [ ] Investigate [Alexa Automated Testing](https://github.com/alexa/skill-sample-nodejs-test-automation)
 - [ ] Investigate [Alexa Load Testing](https://github.com/alexa/skill-sample-node-js-build-scale-test)
 - [ ] Investigate [Alexa Testing](https://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
+- [ ] Investigate [Alexa Timeouts](https://github.com/nickclaw/alexa-ability-timeout)
 - [ ] Investigate [Virtual Alexa](https://github.com/bespoken/virtual-alexa) [also looks pretty spiffy]
 - [x] Investigate Google’s Assistant
