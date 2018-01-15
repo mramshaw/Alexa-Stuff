@@ -108,6 +108,23 @@ seems to be standard REST. There are two permissions: __read__ and __write__. Re
 Follow the link for the
 [Permissions API](https://developer.amazon.com/docs/custom-skills/access-the-alexa-shopping-and-to-do-lists.html#list-management-quick-reference).
 
+#### Certification
+
+Once your Alexa skill is complete, you can choose to submit it for certification. I _thought_
+this would take up to five days (so basically a calendar week) as I am sure I read this in
+their documentation somewhere - but, as often happens with AWS documentation, I cannot find
+any reference to this now.
+
+It's worth checking the certification requirements very carefully before submitting a skill.
+
+They can - and apparently _will_ - reject a skill for fairly arbitrary reasons, for instance
+if it _might_ compete with their __Audible.com__ business. And they seem to be prone to
+changing the rules to suit themselves - at the moment, advertising is a no-no, but once
+they figure out how to commercialize (no pun intended) it I am sure it will again become
+an option.
+
+One interesting development to watch is [Alexa Traffic Analysis](https://www.alexa.com/siteinfo/aws.org).
+
 #### Alexa versus Google’s Assistant
 
 Follow the link for an interesting read about
