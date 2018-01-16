@@ -14,6 +14,10 @@ is an indication of the average quality of a [Festival TTS Voice](/Voices/gen_fe
 Alexa is impressive. While the regional voices vary in quality, they all sound fairly
 natural - with little of the robotic quality often found with TTS systems.
 
+You can check out my first published Alexa Skill here:
+
+    https://www.amazon.com/dp/B078WGVWL2
+
 ## Bits and bobs of stuff for Alexa development
 
 #### Trivia
