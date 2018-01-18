@@ -92,13 +92,20 @@ use this as a target, rather than trying to minimize memory usage with procedura
 
 #### Logging
 
-Each invocation (a request or reponse) will generate 3 log events (a START event, an END
-event, and a REPORT event [basically the billing details]) so the urge to log each and every
-interesting user interaction is probably to be avoided. Even so, for debugging reasons it is
-important to log every __significant__ event (user responses, unhandled events, enough life
-cycle events for context). There is a rich market for logging analysis, which should be a
-warning to be careful about what gets logged - for privacy reasons, if not just to reduce
-the log clutter.
+Each invocation (request or reponse) of a Lambda function will generate billing details,
+consisting of three log events (a START event, an END event, and a REPORT event). These may
+be filtered out by typing:
+
+    -START -END -REPORT
+
+into the `Filter events` text box (sadly these must be typed in __each and every__ time;
+perhaps the recommended way to do this is to create a custom __Dashboard__).
+
+Due to the voluminous billing details, the urge to log each and every interesting user
+interaction is probably to be avoided. Even so, for debugging reasons it is important to
+log every __significant__ event (user responses, unhandled events, enough life cycle events
+for context). There is a rich market for logging analysis, which should be a warning to
+be careful about what gets logged - for privacy reasons, if not just to reduce clutter.
 
 #### Account Linking
 
@@ -127,7 +134,26 @@ changing the rules to suit themselves - at the moment, advertising is a no-no, b
 they figure out how to commercialize (no pun intended) it I am sure it will again become
 an option.
 
-One interesting development to watch is [Alexa Traffic Analysis](https://www.alexa.com/siteinfo/aws.org).
+[It took eight calendar days to get my first Alexa skill certified.]
+
+#### Monitoring and Versioning
+
+Once your skill has been submitted for certification it will be locked on the developer console.
+However, if you are using AWS Lambda functions, you can monitor the certification testing via
+Cloudwatch Logs.
+
+Once your skill has been certified, a new development version will automatically be created.
+
+While it may be tempting to re-use any existing Lambda functions, it is probably a better
+idea to create a new Lambda function for each iteration (version) of your Alexa skill.
+
+The Alexa dashboard is excellent for monitoring purposes.
+
+#### Commercialization
+
+There is a beta available for [In-Skill Purchasing](https://developer.amazon.com/alexa-skills-kit/earn).
+
+Another development to watch is [Alexa Traffic Analysis](https://www.alexa.com/siteinfo/aws.org).
 
 #### Alexa versus Google’s Assistant
 
@@ -151,6 +177,7 @@ Some sample Python code
 - [x] Investigate the use of [Alexa Custom Slots](https://developer.amazon.com/docs/custom-skills/slot-type-reference.html)
 - [x] Investigate the use of __Account Linking__ and __Permissions__
 - [x] Investigate __Cloudwatch Event Logging__
+- [x] Investigate __Cloudwatch Event Logging filters__
 - [ ] Investigate __Cloudwatch Alerts__
 - [ ] Investigate [Alexa Automated Testing](https://github.com/alexa/skill-sample-nodejs-test-automation)
 - [ ] Investigate [Alexa Load Testing](https://github.com/alexa/skill-sample-node-js-build-scale-test)
