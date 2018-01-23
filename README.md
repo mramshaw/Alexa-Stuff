@@ -46,6 +46,21 @@ the Dog in the Night-Time` (recommended by a librarian). All, at one time or ano
 banned. It seems that pretty much everything that is worth reading has been banned at
 one time or another.]
 
+#### Glossary
+
+As is usually the case, probably the best place to start is by defining terms or establishing
+a vocabulary (sometimes called a Domain-Specific Language or __DSL__). For instance, rather
+than the over-used __app__, Alexa developers write __skills__ (but some of the AWS documentation
+stills discusses skills as if they were apps). The Alexa glossary is actually pretty good
+(also brief) and well worth reading:
+
+    https://developer.amazon.com/docs/ask-overviews/alexa-skills-kit-glossary.html
+
+[As is usually the case, things change quickly in the cloud and the documentation does not
+always keep pace. For instance, as I write this, [Golang](https://github.com/mramshaw/Golang)
+is not listed in this Glossary as an option for AWS Lambda functions - and Amazon recently
+added support for Go to Lambda functions. ___Caveat emptor___.]
+
 #### Wake Word
 
 In the phrase:
