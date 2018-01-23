@@ -61,6 +61,14 @@ always keep pace. For instance, as I write this, [Golang](https://github.com/mra
 is not listed in this Glossary as an option for AWS Lambda functions - and Amazon recently
 added support for Go to Lambda functions. ___Caveat emptor___.]
 
+#### Types of Skills
+
+There are various skill types. The main focus here so far has been
+[Custom Skills](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html),
+although 
+[Flash Briefings](https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
+(which allow for RSS or JSON feeds) also look pretty interesting.
+
 #### Wake Word
 
 In the phrase:
@@ -188,6 +196,7 @@ Some sample Python code
 
 #### To Do
 
+- [ ] Investigae the use of [Flash Briefings](https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
 - [x] Investigate the use of [DynamoDB](https://aws.amazon.com/dynamodb/) as a back end
 - [x] Investigate the use of [Alexa Custom Slots](https://developer.amazon.com/docs/custom-skills/slot-type-reference.html)
 - [x] Investigate the use of __Account Linking__ and __Permissions__
