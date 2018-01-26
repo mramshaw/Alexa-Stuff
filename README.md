@@ -145,8 +145,8 @@ Follow the link for the
 #### Certification
 
 Once your Alexa skill is complete, you can choose to submit it for certification. I _thought_
-this would take up to five days (so basically a calendar week) as I am sure I read this in
-their documentation somewhere - but, as often happens with AWS documentation, I cannot find
+this would take up to five business days (so basically a calendar week) as I am sure I read this
+in the documentation somewhere - but, as often happens with AWS documentation, I cannot find
 any reference to this now.
 
 It's worth checking the certification requirements very carefully before submitting a skill.
@@ -156,6 +156,10 @@ if it _might_ compete with their __Audible.com__ business. And they seem to be p
 changing the rules to suit themselves - at the moment, advertising is a no-no, but once
 they figure out how to commercialize (no pun intended) it I am sure it will again become
 an option.
+
+Note that certification testing for compliance is not the same thing as logic testing, which
+is a developer responsibility. It's entirely possible to have a skill certified that still
+has some bugs in it. There is a __beta-testing program__ which is worth looking at.
 
 [It took eight calendar days to get my first Alexa skill certified.]
 
@@ -175,6 +179,9 @@ The Alexa dashboard is excellent for monitoring purposes.
 #### Commercialization
 
 There is a beta available for [In-Skill Purchasing](https://developer.amazon.com/alexa-skills-kit/earn).
+Note the following (the second sentence is the important one):
+
+> You can apply to participate in the developer preview program below. We’ll follow up if you are selected for the program.
 
 Another development to watch is [Alexa Traffic Analysis](https://www.alexa.com/siteinfo/aws.org).
 
