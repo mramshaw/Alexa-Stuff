@@ -14,6 +14,14 @@ is an indication of the average quality of a [Festival TTS Voice](/Voices/gen_fe
 Alexa is impressive. While the regional voices vary in quality, they all sound fairly
 natural - with little of the robotic quality often found with TTS systems.
 
+Human–computer interaction (once referred to as __HCI__) is a very old research topic.
+Likewise, Interactive voice response (__IVR__) has been on the technology horizon for
+quite some time too. With Alexa and other simliar products the promise of all of
+this research has finally reached maturity (which doesn't mean to say that further
+improvement is not possible - in fact, I am sure all of these products will continue
+to evolve and improve). What has finally been delivered is a full-fledged voice-user
+interface (__VUI__) - no keys to press or buttons to push; simply talk to it!
+
 You can check out my first published Alexa Skill here:
 
     https://www.amazon.com/dp/B078WGVWL2
@@ -162,7 +170,8 @@ is a developer responsibility. It's entirely possible to have a skill certified 
 has some bugs in it. There is also a __Skills Beta Testing__ program (with 500 invites) which
 looks worthwhile.
 
-[It took eight calendar days to get my first Alexa skill certified.]
+[It took eight calendar days to get my first Alexa skill certified. But that skill, resubmitted
+later with a few minor improvements, only took a day or so to get re-certified.]
 
 #### Monitoring and Versioning
 
@@ -170,7 +179,8 @@ Once your skill has been submitted for certification it will be locked on the de
 However, if you are using AWS Lambda functions, you can monitor the certification testing via
 Cloudwatch Logs.
 
-Once your skill has been certified, a new development version will automatically be created.
+Once your skill has been certified (or re-certified), a new development version will automatically
+be created for you.
 
 While it may be tempting to re-use any existing Lambda functions, it is probably a better
 idea to create a new Lambda function for each iteration (version) of your Alexa skill.
