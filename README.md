@@ -159,7 +159,8 @@ an option.
 
 Note that certification testing for compliance is not the same thing as logic testing, which
 is a developer responsibility. It's entirely possible to have a skill certified that still
-has some bugs in it. There is a __beta-testing program__ which is worth looking at.
+has some bugs in it. There is also a __Skills Beta Testing__ program (with 500 invites) which
+looks worthwhile.
 
 [It took eight calendar days to get my first Alexa skill certified.]
 
