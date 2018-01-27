@@ -16,7 +16,7 @@ natural - with little of the robotic quality often found with TTS systems.
 
 Human–computer interaction (once referred to as __HCI__) is a very old research topic.
 Likewise, Interactive voice response (__IVR__) has been on the technology horizon for
-quite some time too. With Alexa and other simliar products the promise of all of
+quite some time too. With Alexa and other similiar products the promise of all of
 this research has finally reached maturity (which doesn't mean to say that further
 improvement is not possible - in fact, I am sure all of these products will continue
 to evolve and improve). What has finally been delivered is a full-fledged voice-user
