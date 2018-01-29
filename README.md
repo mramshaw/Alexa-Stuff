@@ -228,6 +228,7 @@ Some sample Python code
 
 #### To Do
 
+- [x] Investigate Alexa Demographics
 - [ ] Investigate the use of [Flash Briefings](https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
 - [x] Investigate the use of [DynamoDB](https://aws.amazon.com/dynamodb/) as a back end
 - [x] Investigate the use of [Alexa Custom Slots](https://developer.amazon.com/docs/custom-skills/slot-type-reference.html)
