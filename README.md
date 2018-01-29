@@ -20,7 +20,8 @@ quite some time too. With Alexa and other similiar products the promise of all o
 this research has finally reached maturity (which doesn't mean to say that further
 improvement is not possible - in fact, I am sure all of these products will continue
 to evolve and improve). What has finally been delivered is a full-fledged voice-user
-interface (__VUI__) - no keys to press or buttons to push; simply talk to it!
+interface (__VUI__) - no keys to press or buttons to push; simply talk to it! Or, in
+other words, a hands-free option - which is great for preventing distracted drivers.
 
 You can check out my first published Alexa Skill here:
 
@@ -68,6 +69,10 @@ stills discusses skills as if they were apps). The Alexa glossary is actually pr
 always keep pace. For instance, as I write this, [Golang](https://github.com/mramshaw/Golang)
 is not listed in this Glossary as an option for AWS Lambda functions - and Amazon recently
 added support for Go to Lambda functions. ___Caveat emptor___.]
+
+For a broader view of things (i.e. not just AWS), check out:
+
+    http://www.witlingo.com/voice-first-glossary-of-terms/
 
 #### Types of Skills
 
@@ -195,6 +200,15 @@ Note the following (the second sentence is the important one):
 > You can apply to participate in the developer preview program below. We’ll follow up if you are selected for the program.
 
 Another development to watch is [Alexa Traffic Analysis](https://www.alexa.com/siteinfo/aws.org).
+
+[I may have mis-read this development. __Alexa.com__ proudly proclaims itself an Amazon company,
+ but it may not actually have anything to do with Alexa ___devices___.]
+
+Good demographic data for Alexa is hard to come by, this is all I could find:
+
+    https://www.slideshare.net/stevelsilver/amazon-echo-alexa-demographics-75193964
+
+[Published on Apr 19, 2017]
 
 #### Alexa versus Google’s Assistant
 
