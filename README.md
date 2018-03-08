@@ -101,6 +101,7 @@ While Alexa provides some very useful
 [Standard Built-in Intents](https://developer.amazon.com/docs/custom-skills/standard-built-in-intents.html#available-standard-built-in-intents)
 it may be a good idea to extend them with Standard Utterances as follows:
 
+    AMAZON.RepeatIntent please repeat
     AMAZON.YesIntent okay
 
 If the __Audio Player__ option is checked, AMAZON.PauseIntent and AMAZON.ResumeIntent
@@ -209,6 +210,13 @@ Good demographic data for Alexa is hard to come by, this is all I could find:
     https://www.slideshare.net/stevelsilver/amazon-echo-alexa-demographics-75193964
 
 [Published on Apr 19, 2017]
+
+#### Free Stuff
+
+I got an email March 8th that my skill had had more than 100 unique customers within 30 days of publication and therefore
+qualified for the January Echo Dot promotion. My free Alexa Dot showed up ___about a half-hour later___ (now that's shipping!).
+
+Still no custom developer hoodie though.
 
 #### Alexa versus Google’s Assistant
 
