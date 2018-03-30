@@ -216,7 +216,7 @@ Good demographic data for Alexa is hard to come by, this is all I could find:
 I got an email March 8th that my skill had had more than 100 unique customers within 30 days of publication and therefore
 qualified for the January Echo Dot promotion. My free Alexa Dot showed up ___about a half-hour later___ (now that's shipping!).
 
-Still no custom developer hoodie though.
+Still no custom developer hoodie though. UPDATE: I got an email March 29th that my custom hoodie had been shipped.
 
 #### Alexa versus Google’s Assistant
 
