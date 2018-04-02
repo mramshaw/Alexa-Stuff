@@ -217,6 +217,11 @@ I got an email March 8th that my skill had had more than 100 unique customers wi
 qualified for the January Echo Dot promotion. My free Alexa Dot showed up ___about a half-hour later___ (now that's shipping!).
 
 Still no custom developer hoodie though. UPDATE: I got an email March 29th that my custom hoodie had been shipped.
+And it eventually showed up April 2nd (it was addressed to ALEXA DEVELOPER MARTIN RAMSHAW which I thought was a nice touch).
+
+![Swag](/Images/Swag.png)
+
+Alexa Dot on the left, custom hoodie in the background. If you do not have a W-Fi router (right, not free) you will need one.
 
 #### Alexa versus Google’s Assistant
 
