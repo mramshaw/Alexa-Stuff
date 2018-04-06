@@ -35,8 +35,14 @@ You can check out my first published Alexa Skill here:
 * [Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
     * [Trivia](#trivia)
     * [Glossary](#glossary)
-    * [Permissions](#permissions)
+    * [Types of Skills](#types-of-skills)
+    * [Alexa Intents](#alexa-intents)
+    * [Alexa Slots](#alexa-slots)
+    * [Memory Usage](#memory-usage)
+    * [Logging](#logging)
     * [Account Linking](#account-linking)
+    * [Permissions](#permissions)
+* [Publishing, operations and the competition](#publishing-operations-and-the-competition)
     * [Certification](#certification)
     * [Monitoring and Versioning](#monitoring-and-versioning)
     * [Commercialization](#commercialization)
@@ -64,9 +70,9 @@ Wi-Fi router, you will need one - preferably that does G/N.
 ![Router-setup](/Images/Router_setup.png)
 
 Set your router to use __either__ WPA __or__ WPA2 (probably WPA2 is the better option)
-but __not__ WPA/WPA2 (___personal___; I don't believe Alexa supports ___professional___
-as yet). If you are really having problems or just want to get started quickly (and are
-planning to re-configure later) use __None__.
+but __not__ WPA/WPA2 (___personal___ edition; I don't believe Alexa supports ___professional___
+edition as yet). If you are really having problems or just want to get started quickly (and
+are planning to re-configure later) use __None__.
 
 If not using __None__ set the cipher type to __AES__.
 
@@ -94,8 +100,8 @@ The word `Alexa` is what is called a __wake word__, in other words the trigger f
 device.
 
 To change it to something else, either open up the Alexa app on your device and change it
-there or else head to [echo.amazon.com](echo.amazon.com), sign in (you will need an Amazon
-account), and use the __Settings__ panel to change it.
+there or else head to [echo.amazon.com](http://echo.amazon.com), sign in (you will need an
+Amazon account), and use the __Settings__ panel to change it.
 
 The choices are currently __Alexa__, __Amazon__, __Echo__ and __Computer__.
 
@@ -216,6 +222,8 @@ and lists. Alexa customers have two default lists: __to-do__ and __shopping__. A
 seems to be standard REST. There are two permissions: __read__ and __write__. Requests are throttled.
 Follow the link for the
 [Permissions API](https://developer.amazon.com/docs/custom-skills/access-the-alexa-shopping-and-to-do-lists.html#list-management-quick-reference).
+
+## Publishing, operations and the competition
 
 #### Certification
 
