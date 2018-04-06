@@ -15,7 +15,7 @@ Alexa is impressive. While the regional voices vary in quality, they all sound f
 natural - with little of the robotic quality often found with TTS systems.
 
 Human–computer interaction (once referred to as __HCI__) is a very old research topic.
-Likewise, Interactive voice response (__IVR__) has been on the technology horizon for
+Likewise, interactive voice response (__IVR__) has been on the technology horizon for
 quite some time too. With Alexa and other similiar products the promise of all of
 this research has finally reached maturity (which doesn't mean to say that further
 improvement is not possible - in fact, I am sure all of these products will continue
@@ -27,7 +27,75 @@ You can check out my first published Alexa Skill here:
 
     https://www.amazon.com/dp/B078WGVWL2
 
+[NLP](#nlp)
+[Hardware](#hardware)
+* [Router configuration](#router-configuration)
+* [App versus Web interface](#app-versus-web-interface)
+* [Wake Word](#wake-word)
+[Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
+* [Trivia](#trivia)
+* [Swag](#swag)
+* [Alexa versus Google’s Assistant](#alexa-versus-google-s-assistant)
+* [Icons](#icons)
+* [Python](#python)
+[To Do](#to-do)
+
+## NLP
+
+If you're here because you are interested in natural language processing (NLP),
+may I suggest you check out my [Speech Recognition](https://github.com/mramshaw/Speech-Recognition)
+repo instead? Here I am mostly focussed on Alexa __devices__ and being an
+__Alexa developer__. It is possible to use an Alexa SDK for NLP but I have
+no knowledge of this, sorry.
+
+## Hardware
+
+Some general notes on actually *using* an Alexa device. If you haven't got a
+Wi-Fi router, you will need one - preferably that does G/N.
+
+#### Router configuration
+
+![Router-setup](/Images/Router_setup.png)
+
+Set your router to use __either__ WPA __or__ WPA2 (probably WPA2 is the better option)
+but __not__ WPA/WPA2 (___personal___; I don't believe Alexa supports ___professional___
+as yet). If you are really having problems or just want to get started quickly (and are
+planning to re-configure later) use __None__.
+
+If not using __None__ set the cipher type to __AES__.
+
+Amazon could really have done a much better job on this; by default I think most routers
+are set to negotiate WPA/WPA2 and TKIP/AES - and Alexa devices will __not__ work if your
+router is set this way.
+
+#### App versus Web interface
+
+I was pleased to find that - while an app is probably the way to go - it is entirely
+possible to set up and configure your Alexa device via the web interface (you will need
+an Amazon account) available at:
+
+    http://echo.amazon.com
+
+[This link will redirect.]
+
+#### Wake Word
+
+In the phrase:
+
+    "Alexa, tell me something"
+
+The word `Alexa` is what is called a __wake word__, in other words the trigger for your
+device.
+
+To change it to something else, either open up the Alexa app on your device and change it
+there or else head to [echo.amazon.com](echo.amazon.com), sign in (you will need an Amazon
+account), and use the __Settings__ panel to change it.
+
+The choices are currently __Alexa__, __Amazon__, __Echo__ and __Computer__.
+
 ## Bits and bobs of stuff for Alexa development
+
+Now follows some random stuff loosely oriented around being an Alexa developer.
 
 #### Trivia
 
@@ -81,19 +149,6 @@ There are various skill types. The main focus here so far has been
 although 
 [Flash Briefings](https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
 (which allow for RSS or JSON feeds) also look pretty interesting.
-
-#### Wake Word
-
-In the phrase:
-
-    "Alexa, tell me something"
-
-The word `Alexa` is what is called a __wake word__, in other words the trigger for your
-device.
-
-To change it to something else, either open up the Alexa app on your device and change it
-there or else head to [echo.amazon.com](echo.amazon.com), sign in (you will need an Amazon
-account), and use the __Settings__ panel to change it.
 
 #### Alexa Intents
 
@@ -211,7 +266,7 @@ Good demographic data for Alexa is hard to come by, this is all I could find:
 
 [Published on Apr 19, 2017]
 
-#### Free Stuff
+#### Swag
 
 I got an email March 8th that my skill had had more than 100 unique customers within 30 days of publication and therefore
 qualified for the January Echo Dot promotion. My free Alexa Dot showed up ___about a half-hour later___ (now that's shipping!).
