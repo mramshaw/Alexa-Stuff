@@ -27,18 +27,24 @@ You can check out my first published Alexa Skill here:
 
     https://www.amazon.com/dp/B078WGVWL2
 
-[NLP](#nlp)
-[Hardware](#hardware)
-* [Router configuration](#router-configuration)
-* [App versus Web interface](#app-versus-web-interface)
-* [Wake Word](#wake-word)
-[Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
-* [Trivia](#trivia)
-* [Swag](#swag)
-* [Alexa versus Google’s Assistant](#alexa-versus-google-s-assistant)
+* [NLP](#nlp)
+* [Hardware](#hardware)
+    * [Router configuration](#router-configuration)
+    * [App versus Web interface](#app-versus-web-interface)
+    * [Wake Word](#wake-word)
+* [Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
+    * [Trivia](#trivia)
+    * [Glossary](#glossary)
+    * [Permissions](#permissions)
+    * [Account Linking](#account-linking)
+    * [Certification](#certification)
+    * [Monitoring and Versioning](#monitoring-and-versioning)
+    * [Commercialization](#commercialization)
+    * [Swag](#swag)
+    * [Alexa versus Google’s Assistant](#alexa-versus-googles-assistant)
 * [Icons](#icons)
 * [Python](#python)
-[To Do](#to-do)
+* [To Do](#to-do)
 
 ## NLP
 
@@ -157,7 +163,7 @@ While Alexa provides some very useful
 it may be a good idea to extend them with Standard Utterances as follows:
 
     AMAZON.RepeatIntent please repeat
-    AMAZON.YesIntent okay
+    AMAZON.YesIntent okayalexa-versus-googles-assistant
 
 If the __Audio Player__ option is checked, AMAZON.PauseIntent and AMAZON.ResumeIntent
 must be specified. Note that these refer to ___streaming___ audio, not normal audio
@@ -286,15 +292,15 @@ Follow the link for an interesting read about
 __tl;dr__ Information is contextual and nuanced, and relying verbatim on either of these
 devices is problematic.
 
-#### Icons
+## Icons
 
 Some [Gimp](https://www.gimp.org/) templates
 
-#### Python
+## Python
 
 Some sample Python code
 
-#### To Do
+## To Do
 
 - [x] Investigate Alexa Demographics
 - [ ] Investigate the use of [Flash Briefings](https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
