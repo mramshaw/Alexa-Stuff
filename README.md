@@ -27,6 +27,8 @@ You can check out my first published Alexa Skill here:
 
     https://www.amazon.com/dp/B078WGVWL2
 
+The table of contents is more or less as follows:
+
 * [NLP](#nlp)
 * [Hardware](#hardware)
     * [Router configuration](#router-configuration)
@@ -64,14 +66,15 @@ no knowledge of this, sorry.
 ## Hardware
 
 Some general notes on actually *using* an Alexa device. If you haven't got a
-Wi-Fi router, you will need one - preferably that does G/N.
+Wi-Fi router, you will need one - preferably one that does G/N. And if you are planning
+on using the web interface, you will need a Wi-Fi card (to talk to the Alexa device).
 
 #### Router configuration
 
 ![Router-setup](/Images/Router_setup.png)
 
 Set your router to use WPA or WPA2 (the _personal_ edition; I don't believe Alexa supports
-the _professional_ edition as yet. And WPA2 is probably the better option here.) but most
+the _professional_ edition as yet. And WPA2 is probably the better option here) but most
 definitely __not__ WPA/WPA2. If you are really having problems or just want to get started
 quickly (please re-configure later) use __None__.
 
@@ -85,11 +88,17 @@ router is set this way.
 
 I was pleased to find that - while an app is probably the way to go - it is entirely
 possible to set up and configure your Alexa device via the web interface (you will need
-an Amazon account) available at:
+an Amazon account, also a Wi-Fi card) available at:
 
     http://echo.amazon.com
 
 [This link will redirect.]
+
+As long as you have Wi-Fi enabled, the Alexa device will do a good job of connecting.
+
+You will need to configure the Alexa device to use a ___permanent___ Wi-Fi connection;
+once you have set it up (and registered it to your account) it will download some new
+software that will allow it to use Bluetooth or pair to a device.
 
 #### Wake Word
 
