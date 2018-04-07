@@ -175,7 +175,8 @@ There are various skill types. The main focus here so far has been
 [Custom Skills](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html),
 although 
 [Flash Briefings](https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
-(which allow for RSS or JSON feeds) also look pretty interesting.
+(which allow for RSS or JSON feeds) also look pretty interesting. Although getting these to ___pause___ or
+___stop___ seems to be a little tricky.
 
 #### Alexa Intents
 
@@ -184,7 +185,7 @@ While Alexa provides some very useful
 it may be a good idea to extend them with Standard Utterances as follows:
 
     AMAZON.RepeatIntent please repeat
-    AMAZON.YesIntent okayalexa-versus-googles-assistant
+    AMAZON.YesIntent okay
 
 If the __Audio Player__ option is checked, AMAZON.PauseIntent and AMAZON.ResumeIntent
 must be specified. Note that these refer to ___streaming___ audio, not normal audio
