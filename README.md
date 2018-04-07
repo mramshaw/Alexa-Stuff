@@ -32,6 +32,7 @@ You can check out my first published Alexa Skill here:
     * [Router configuration](#router-configuration)
     * [App versus Web interface](#app-versus-web-interface)
     * [Wake Word](#wake-word)
+    * [So what's it good for?](#so-whats-it-good-for)
 * [Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
     * [Trivia](#trivia)
     * [Glossary](#glossary)
@@ -69,12 +70,12 @@ Wi-Fi router, you will need one - preferably that does G/N.
 
 ![Router-setup](/Images/Router_setup.png)
 
-Set your router to use __either__ WPA __or__ WPA2 (probably WPA2 is the better option)
-but __not__ WPA/WPA2 (___personal___ edition; I don't believe Alexa supports ___professional___
-edition as yet). If you are really having problems or just want to get started quickly (and
-are planning to re-configure later) use __None__.
+Set your router to use WPA or WPA2 (the _personal_ edition; I don't believe Alexa supports
+the _professional_ edition as yet. And WPA2 is probably the better option here.) but most
+definitely __not__ WPA/WPA2. If you are really having problems or just want to get started
+quickly (please re-configure later) use __None__.
 
-If not using __None__ set the cipher type to __AES__.
+Set the cipher type to __AES__ unless you are using __None__ (but probably even then too).
 
 Amazon could really have done a much better job on this; by default I think most routers
 are set to negotiate WPA/WPA2 and TKIP/AES - and Alexa devices will __not__ work if your
@@ -104,6 +105,11 @@ there or else head to [echo.amazon.com](http://echo.amazon.com), sign in (you wi
 Amazon account), and use the __Settings__ panel to change it.
 
 The choices are currently __Alexa__, __Amazon__, __Echo__ and __Computer__.
+
+#### So what's it good for?
+
+It's a little too early for me to say, but if you're single (Honey, I had a dream you were
+talking to some woman named Alexa ?!?!) it probably makes a good bedside radio/alarm clock.
 
 ## Bits and bobs of stuff for Alexa development
 
