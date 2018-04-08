@@ -19,9 +19,10 @@ Likewise, interactive voice response (__IVR__) has been on the technology horizo
 quite some time too. With Alexa and other similiar products the promise of all of
 this research has finally reached maturity (which doesn't mean to say that further
 improvement is not possible - in fact, I am sure all of these products will continue
-to evolve and improve). What has finally been delivered is a full-fledged voice-user
-interface (__VUI__) - no keys to press or buttons to push; simply talk to it! Or, in
-other words, a hands-free option - which is great for preventing distracted drivers.
+to evolve and improve). What has finally been delivered is a fully-fledged __VUI__
+([Voice User Interface](https://developer.amazon.com/alexa-skills-kit/vui)) - no keys
+to press or buttons to push; simply talk to it! Or in other words, a nice hands-free
+option - which is great for preventing distracted drivers.
 
 You can check out my first published Alexa Skill here:
 
@@ -35,6 +36,10 @@ The table of contents is more or less as follows:
     * [App versus Web interface](#app-versus-web-interface)
     * [Wake Word](#wake-word)
     * [So what's it good for?](#so-whats-it-good-for)
+        * [Alarms](#alarms)
+        * [As a reference](#as-a-reference)
+        * [As a sleep aid](#as-a-sleep-aid)
+        * [Wikipedia](#wikipedia)
 * [Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
     * [Trivia](#trivia)
     * [Glossary](#glossary)
@@ -120,6 +125,51 @@ The choices are currently __Alexa__, __Amazon__, __Echo__ and __Computer__.
 It's a little too early for me to say, but if you're single (Honey, I had a dream you were
 talking to some woman named Alexa ?!?!) it probably makes a good bedside radio/alarm clock.
 
+#### Alarms
+
+For instance:
+
+    "Alexa, set an alarm for 5 minutes"
+
+    "Five minutes, starting now"
+
+    [Five minutes passes.]
+
+    [Alexa devices chimes.]
+
+    "Alexa, cancel the alarm." [Or you could press the wake button.]
+
+Timers and alarms can be named, and you can have up to 100 of them.
+
+Apparently they do not depend on the cloud either, being device-resident.
+
+#### As a reference
+
+For those hard-to-spell words:
+
+    "Alexa, how do you spell Wikipedia?"
+
+[She also knows weights and measures too.]
+
+#### As a sleep aid
+
+If you are having trouble sleeping:
+
+    "Alexa, open Rain Sounds"
+
+[There are far too many of these to be specific, but you can probably find one you like.]
+
+If you pair Alexa to your smartphone, she can dial numbers for you (but your
+smartphone could probably already do this).
+
+#### Wikipedia
+
+Perhaps my favourite skill:
+
+    "Alexa, Wikipedia: Hanoi"
+
+[She gives the first paragraph or so; you can ask for more if you wish.]
+
 ## Bits and bobs of stuff for Alexa development
 
 Now follows some random stuff loosely oriented around being an Alexa developer.
@@ -127,6 +177,8 @@ Now follows some random stuff loosely oriented around being an Alexa developer.
 #### Trivia
 
 There are Easter Eggs in Alexa:
+
+    "Alexa, cheer me up."
 
     "Alexa, what's on your mind?"
 
@@ -197,6 +249,12 @@ For a good example of how __not__ to implement an audio-playing interface, try:
     "Alexa, tell me something inspiring"
 
 [Neither "Pause" nor "Resume" seem to work correctly.]
+
+UPDATE: As of April, 2018 this skill seems to have been withdrawn.
+
+    "Sorry, I don't know that one."
+
+[This seems to be what she says whenever she doesn't understand your question.]
 
 #### Alexa Slots
 
