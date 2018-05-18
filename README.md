@@ -338,10 +338,9 @@ The Alexa dashboard is excellent for monitoring purposes.
 
 #### Commercialization
 
-There is a beta available for [In-Skill Purchasing](https://developer.amazon.com/alexa-skills-kit/earn).
-Note the following (the second sentence is the important one):
+[In-Skill Purchasing](https://developer.amazon.com/alexa-skills-kit/earn) is now generally available.
 
-> You can apply to participate in the developer preview program below. We’ll follow up if you are selected for the program.
+[Even though I was invited to join the __beta__, I still haven't looked into this so cannot comment.]
 
 Another development to watch is [Alexa Traffic Analysis](https://www.alexa.com/siteinfo/aws.org).
 
