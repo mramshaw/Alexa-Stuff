@@ -15,14 +15,14 @@ Alexa is impressive. While the regional voices vary in quality, they all sound f
 natural - with little of the robotic quality often found with TTS systems.
 
 Human–computer interaction (once referred to as __HCI__) is a very old research topic.
-Likewise, interactive voice response (__IVR__) has been on the technology horizon for
-quite some time too. With Alexa and other similiar products the promise of all of
-this research has finally reached maturity (which doesn't mean to say that further
-improvement is not possible - in fact, I am sure all of these products will continue
-to evolve and improve). What has finally been delivered is a fully-fledged __VUI__
-([Voice User Interface](https://developer.amazon.com/alexa-skills-kit/vui)) - no keys
-to press or buttons to push; simply talk to it! Or in other words, a nice hands-free
-option - which is great for preventing distracted drivers.
+Likewise, interactive voice response or [IVR](https://en.wikipedia.org/wiki/Interactive_voice_response)
+has been on the technology horizon for quite some time too. With Alexa and other similiar
+products the promise of all of this research has finally reached maturity (which doesn't
+mean to say that further improvement is not possible - in fact, I am sure all of these
+products will continue to evolve and improve). What has finally been delivered is a
+fully-fledged __VUI__ ([Voice User Interface](https://developer.amazon.com/alexa-skills-kit/vui))
+with no keys to press or buttons to push; simply talk to it! Or in other words, a nice
+hands-free option - which is great for preventing distracted drivers.
 
 You can check out my first published Alexa Skill here:
 
@@ -364,7 +364,7 @@ And it eventually showed up April 2nd (it was addressed to ALEXA DEVELOPER MARTI
 
 ![Swag](/Images/Swag.png)
 
-Alexa Dot on the left, custom hoodie in the background. If you do not have a W-Fi router (right, not free) you will need one.
+Alexa Dot on the left, custom hoodie in the background. If you do not have a Wi-Fi router (right, not free) you will need one.
 
 #### Alexa versus Google’s Assistant
 
@@ -383,7 +383,8 @@ source may provide a broader perspective. Some of the following may be of intere
 
     https://softwareengineeringdaily.com/2018/05/18/alexa-voice-design-with-paul-cutsinger/
 
-[Note that UX for Voice is __not__ IVR, which is a much older technology.]
+Note that UX for Voice is __not__ [IVR](https://en.wikipedia.org/wiki/Interactive_voice_response),
+which is a much older technology.
 
 ## Icons
 
