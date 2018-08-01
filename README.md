@@ -373,6 +373,17 @@ Follow the link for an interesting read about
 __tl;dr__ Information is contextual and nuanced, and relying verbatim on either of these
 devices is problematic.
 
+## UX for Voice
+
+While Amazon provides quite a lot of content related to Alexa, sometimes an external
+source may provide a broader perspective. Some of the following may be of interest:
+
+    https://www.lynda.com/User-Experience-tutorials/UX-Voice-Planning-Implementation/679644-2.html
+
+    https://softwareengineeringdaily.com/2018/05/18/alexa-voice-design-with-paul-cutsinger/
+
+[Note that UX for Voice is __not__ IVR, which is a much older (and more primitive) technology.]
+
 ## Icons
 
 Some [Gimp](https://www.gimp.org/) templates
