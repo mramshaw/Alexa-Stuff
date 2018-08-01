@@ -56,6 +56,7 @@ The table of contents is more or less as follows:
     * [Commercialization](#commercialization)
     * [Swag](#swag)
     * [Alexa versus Google’s Assistant](#alexa-versus-googles-assistant)
+* [UX for Voice](#ux-for-voice)
 * [Icons](#icons)
 * [Python](#python)
 * [To Do](#to-do)
@@ -382,7 +383,7 @@ source may provide a broader perspective. Some of the following may be of intere
 
     https://softwareengineeringdaily.com/2018/05/18/alexa-voice-design-with-paul-cutsinger/
 
-[Note that UX for Voice is __not__ IVR, which is a much older (and more primitive) technology.]
+[Note that UX for Voice is __not__ IVR, which is a much older technology.]
 
 ## Icons
 
