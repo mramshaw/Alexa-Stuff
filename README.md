@@ -44,6 +44,7 @@ The table of contents is more or less as follows:
     * [Trivia](#trivia)
     * [Glossary](#glossary)
     * [Types of Skills](#types-of-skills)
+    * [CanFulfillIntentRequest](#canfulfillintentrequest)
     * [Alexa Intents](#alexa-intents)
     * [Alexa Slots](#alexa-slots)
     * [Memory Usage](#memory-usage)
@@ -231,6 +232,15 @@ although
 (which allow for RSS or JSON feeds) also look pretty interesting. Although getting these to ___pause___ or
 ___stop___ seems to be a little tricky.
 
+#### CanFulfillIntentRequest
+
+In the case where a user does not know the specific __name__ for a skill, this new beta
+offering allows Amazon to select a set of skills that _might_ fulfill the request:
+
+    https://developer.amazon.com/docs/custom-skills/understand-name-free-interaction-for-custom-skills.html
+
+Currently in beta (as of August 2018), and US-only.
+
 #### Alexa Intents
 
 While Alexa provides some very useful
@@ -404,6 +414,7 @@ Some sample Python code
 - [x] Investigate __Cloudwatch Event Logging__
 - [x] Investigate __Cloudwatch Event Logging filters__
 - [ ] Investigate __Cloudwatch Alerts__
+- [ ] Investigate __CanFulfillIntentRequest__ once it comes out of Beta or becomes multi-language
 - [ ] Investigate [Alexa Automated Testing](https://github.com/alexa/skill-sample-nodejs-test-automation)
 - [ ] Investigate [Alexa Load Testing](https://github.com/alexa/skill-sample-node-js-build-scale-test)
 - [ ] Investigate [Alexa Testing](https://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
