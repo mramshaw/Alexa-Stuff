@@ -48,6 +48,7 @@ The table of contents is more or less as follows:
     * [Alexa Intents](#alexa-intents)
     * [Alexa Slots](#alexa-slots)
     * [Memory Usage](#memory-usage)
+    * [Testing](#testing)
     * [Logging](#logging)
     * [Account Linking](#account-linking)
     * [Permissions](#permissions)
@@ -278,6 +279,41 @@ idea to restrict these quite a bit. Follow the following link for some useful ti
 
 The smallest possible allocation for a Lambda Function is 128 MB. So it is a good idea to
 use this as a target, rather than trying to minimize memory usage with procedural code.
+
+#### Testing
+
+Rigorous manual testing is of course a first step, but what about automated testing?
+
+Amazon provides a good summary of the various testing options:
+[Why testing and automation matter](https://developer.amazon.com/blogs/alexa/post/e2f3d18c-13ca-4796-bc83-e8a196f20e57/building-engaging-alexa-skills-why-testing-and-automation-matter).
+
+One interesting quote from the above article:
+
+> we may not be aware of any problems until a user writes a one-star review.
+
+The [Bespoken](http://docs.bespoken.io/en/latest/) testing framework is well worth a look:
+
+    http://docs.bespoken.io/en/latest/getting_started/
+
+Alexa:
+
+    http://docs.bespoken.io/en/latest/tutorials/tutorial_alexa_unit_testing/
+
+SDK:
+
+    https://github.com/bespoken/virtual-device-sdk
+
+Example:
+
+    https://github.com/bespoken/GuessThePrice
+
+And:
+
+    https://bespoken.io/blog/automated-testing-for-alexa-skills-2/
+
+For monitoring your skills in production, logging (see the next section) is essential.
+
+Amazon Cloudwatch alerts can be set to go off if any unexpected circumstances or events arise.
 
 #### Logging
 
