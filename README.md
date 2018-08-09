@@ -24,9 +24,13 @@ fully-fledged __VUI__ ([Voice User Interface](https://developer.amazon.com/alexa
 with no keys to press or buttons to push; simply talk to it! Or in other words, a nice
 hands-free option - which is great for preventing distracted drivers.
 
-You can check out my first published Alexa Skill here:
+You can check out my first published Alexa Skill (Word Scramble) here:
 
     https://www.amazon.com/dp/B078WGVWL2
+
+Or my latest Skill (Peanut Allergy Facts):
+
+    https://www.amazon.com/dp/B07GB4BG4K
 
 The table of contents is more or less as follows:
 
