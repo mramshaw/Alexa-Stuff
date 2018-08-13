@@ -322,8 +322,9 @@ Amazon Cloudwatch alerts can be set to go off if any unexpected circumstances or
 #### Logging
 
 Each invocation (request or reponse) of a Lambda function will generate billing details,
-consisting of three log events (a START event, an END event, and a REPORT event). These may
-be filtered out by typing:
+consisting of three [CloudWatch](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-functions.html)
+events (a START event, an END event, and a REPORT event). These may be filtered out
+of the CloudWatch console by typing:
 
     -START -END -REPORT
 
@@ -335,6 +336,11 @@ interaction is probably to be avoided. Even so, for debugging reasons it is impo
 log every __significant__ event (user responses, unhandled events, enough life cycle events
 for context). There is a rich market for logging analysis, which should be a warning to
 be careful about what gets logged - for privacy reasons, if not just to reduce clutter.
+
+Of course, it is entirely possible to create a simple skill (such as a Facts skill) that
+does not require debugging, in which case the performance statistics available from the
+[AWS Lambda console](https://console.aws.amazon.com/lambda/) may be sufficient.
+
 
 #### Account Linking
 
