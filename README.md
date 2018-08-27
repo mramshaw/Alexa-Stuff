@@ -44,7 +44,6 @@ The table of contents is more or less as follows:
         * [As a reference](#as-a-reference)
         * [As a sleep aid](#as-a-sleep-aid)
         * [Wikipedia](#wikipedia)
-        * [Random Stuff](#random-stuff)
 * [Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
     * [Trivia](#trivia)
     * [Glossary](#glossary)
@@ -178,15 +177,6 @@ Perhaps my favourite skill:
 
 [She gives the first paragraph or so; you can ask for more if you wish.]
 
-#### Random Stuff
-
-There are all kinds of Easter Eggs:
-
-    "Alexa, tell me a story"
-
-There seem to be continual additions to Alexa's repertoire
-so it's worth trying various random things - play around!
-
 ## Bits and bobs of stuff for Alexa development
 
 Now follows some random stuff loosely oriented around being an Alexa developer.
@@ -197,9 +187,11 @@ There are Easter Eggs in Alexa:
 
     "Alexa, cheer me up."
 
+    "Alexa, tell me a story."
+
     "Alexa, what's on your mind?"
 
-    "Alexa, tell me something"
+    "Alexa, tell me something."
 
 For instance, according to Alexa:
 
