@@ -44,6 +44,7 @@ The table of contents is more or less as follows:
         * [As a reference](#as-a-reference)
         * [As a sleep aid](#as-a-sleep-aid)
         * [Wikipedia](#wikipedia)
+        * [Random Stuff](#random-stuff)
 * [Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
     * [Trivia](#trivia)
     * [Glossary](#glossary)
@@ -176,6 +177,15 @@ Perhaps my favourite skill:
     "Alexa, Wikipedia: Hanoi"
 
 [She gives the first paragraph or so; you can ask for more if you wish.]
+
+#### Random Stuff
+
+There are all kinds of Easter Eggs:
+
+    "Alexa, tell me a story"
+
+There seem to be continual additions to Alexa's repertoire
+so it's worth trying various random things - play around!
 
 ## Bits and bobs of stuff for Alexa development
 
