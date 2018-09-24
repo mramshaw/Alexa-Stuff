@@ -39,6 +39,7 @@ The table of contents is more or less as follows:
     * [Router configuration](#router-configuration)
     * [App versus Web interface](#app-versus-web-interface)
     * [Wake Word](#wake-word)
+    * [Volume](#volume)
     * [So what's it good for?](#so-whats-it-good-for)
         * [Alarms](#alarms)
         * [As a reference](#as-a-reference)
@@ -126,6 +127,20 @@ there or else head to [echo.amazon.com](http://echo.amazon.com), sign in (you wi
 Amazon account), and use the __Settings__ panel to change it.
 
 The choices are currently __Alexa__, __Amazon__, __Echo__ and __Computer__.
+
+#### Volume
+
+Alexa devices have `+` and `-` buttons to adjust the volume.
+
+Of course, this can just as easily be done via voice:
+
+    "Alexa, volume 6"
+
+And:
+
+    "Alexa, what volume are you set at?"
+
+Also, there are `louder` and `quieter` commands too.
 
 #### So what's it good for?
 
