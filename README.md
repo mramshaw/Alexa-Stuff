@@ -142,7 +142,15 @@ And:
 
 Also, there are `louder` and `quieter` commands too.
 
-#### So what's it good for?
+#### Languages
+
+Alexa devices have always supported English but now (since March 2018) support other languages:
+
+    http://developer.amazon.com/docs/custom-skills/develop-skills-in-multiple-languages.html
+
+However, developing for languages other than English still seems a little problematic.
+
+## So what's it good for?
 
 It's a little too early for me to say, but if you're single (Honey, I had a dream you were
 talking to some woman named Alexa ?!?!) it probably makes a good bedside radio/alarm clock.
