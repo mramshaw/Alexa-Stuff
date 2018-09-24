@@ -165,6 +165,12 @@ Timers and alarms can be named, and you can have up to 100 of them.
 
 Apparently they do not depend on the cloud either, being device-resident.
 
+To hear what alarms are set:
+
+    "Alexa, what alarms have been set?"
+
+["No alarm has been set."]
+
 #### As a reference
 
 For those hard-to-spell words:
