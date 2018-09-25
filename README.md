@@ -149,7 +149,9 @@ Alexa devices have always supported English but now (since March 2018) support o
 
     http://developer.amazon.com/docs/custom-skills/develop-skills-in-multiple-languages.html
 
-However, developing for languages other than English still seems a little problematic.
+However, developing for languages other than English still seems a little problematic. For example, the
+[French](https://developer.amazon.com/blogs/alexa/post/eaad8183-585e-4e6c-897d-8710d94b121f/how-to-update-your-skills-for-france)
+deployment instructions.
 
 ## So what's it good for?
 
