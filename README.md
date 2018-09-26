@@ -151,7 +151,8 @@ Alexa devices have always supported English but now (since March 2018) support o
 
 However, developing for languages other than English still seems a little problematic. For example, the
 [French](https://developer.amazon.com/blogs/alexa/post/eaad8183-585e-4e6c-897d-8710d94b121f/how-to-update-your-skills-for-france)
-deployment instructions.
+deployment instructions. On the other hand, from the standpoint of quality, Alexa's French voice is far
+better than any of Alexa's English voices.
 
 ## So what's it good for?
 
@@ -500,4 +501,6 @@ Some sample Python code
 - [ ] Investigate [Alexa Testing](https://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
 - [ ] Investigate [Alexa Timeouts](https://github.com/nickclaw/alexa-ability-timeout)
 - [ ] Investigate [Virtual Alexa](https://github.com/bespoken/virtual-alexa) [also looks pretty spiffy]
+- [x] Investigate Internationalization (i18n) and Localization (L10n)
+- [x] Investigate Alexa’s French voice
 - [x] Investigate Google’s Assistant
