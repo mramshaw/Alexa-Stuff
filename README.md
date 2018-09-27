@@ -159,6 +159,13 @@ better than any of Alexa's English voices.
 It's a little too early for me to say, but if you're single (Honey, I had a dream you were
 talking to some woman named Alexa ?!?!) it probably makes a good bedside radio/alarm clock.
 
+UPDATE: As of September, 2018 there is talk of a `whisper` recognition mode (as far as I
+know, SSML has always supported a whisper mode for Alexa utterances).
+
+    https://developer.amazon.com/blogs/alexa/post/c0e7798d-32bc-4549-9c24-97d204a7bf3a/whisper-to-alexa-and-she-ll-whisper-back
+
+> (The U.S. English version will be available in October.)
+
 #### Alarms
 
 For instance:
