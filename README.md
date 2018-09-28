@@ -41,6 +41,7 @@ The table of contents is more or less as follows:
     * [Wake Word](#wake-word)
     * [Volume](#volume)
     * [Languages](#languages)
+        * [French](#french)
 * [So what's it good for?](#so-whats-it-good-for)
     * [Alarms](#alarms)
     * [As a reference](#as-a-reference)
@@ -149,10 +150,25 @@ Alexa devices have always supported English but now (since March 2018) support o
 
     http://developer.amazon.com/docs/custom-skills/develop-skills-in-multiple-languages.html
 
-However, developing for languages other than English still seems a little problematic. For example, the
+However, developing for languages other than English still seems a little problematic.
+
+##### French
+
+For example, the
 [French](https://developer.amazon.com/blogs/alexa/post/eaad8183-585e-4e6c-897d-8710d94b121f/how-to-update-your-skills-for-france)
-deployment instructions. On the other hand, from the standpoint of quality, Alexa's French voice is far
-better than any of Alexa's English voices.
+deployment instructions. On the other hand, from the standpoint of quality, Alexa's French
+voice is far better than any of Alexa's English voices.
+
+When you submit your skill for certification, the French copy will be carefully vetted for
+typos and grammatical errors. Any errors will result in a certification failure.
+
+Interestingly, Amazon prefer the familiar ___tu___ form over the more formal ___vous___ form.
+Using ___vous___ forms in either the launch phrases or the skill copy will resist in the skill
+being rejected.
+
+There can be some trivial certification failures, which seem to be Amazon protecting its
+brand. For instance, they prefer the word "skill" to "compétence" (which is probably more
+correct).
 
 ## So what's it good for?
 
