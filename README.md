@@ -52,7 +52,7 @@ The table of contents is more or less as follows:
     * [Glossary](#glossary)
     * [Types of Skills](#types-of-skills)
     * [CanFulfillIntentRequest](#canfulfillintentrequest)
-    * [SessionEndedRequest](#sessionendedrequest
+    * [SessionEndedRequest](#sessionendedrequest)
     * [Alexa Intents](#alexa-intents)
     * [Alexa Slots](#alexa-slots)
     * [Memory Usage](#memory-usage)
