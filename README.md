@@ -307,7 +307,7 @@ Currently in beta (as of August 2018), and US-only.
 
 #### SessionEndedRequest
 
-This probably indicates a user timeout.
+This indicates an abnormal end of the current session, most probably a user timeout.
 
 For more information:
 
@@ -316,6 +316,12 @@ For more information:
 Nota bene:
 
 > Your service cannot send back a response to a `SessionEndedRequest`.
+
+For even more information:
+
+    http://developer.amazon.com/docs/custom-skills/request-types-reference.html#sessionendedrequest
+
+[Provides details of the various reasons why the session ended.]
 
 #### Alexa Intents
 
