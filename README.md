@@ -15,22 +15,22 @@ Alexa is impressive. While the regional voices vary in quality, they all sound f
 natural - with little of the robotic quality often found with TTS systems.
 
 Human–computer interaction (once referred to as __HCI__) is a very old research topic.
-Likewise, interactive voice response or [IVR](https://en.wikipedia.org/wiki/Interactive_voice_response)
+Likewise, interactive voice response or [IVR](http://en.wikipedia.org/wiki/Interactive_voice_response)
 has been on the technology horizon for quite some time too. With Alexa and other similiar
 products the promise of all of this research has finally reached maturity (which doesn't
 mean to say that further improvement is not possible - in fact, I am sure all of these
 products will continue to evolve and improve). What has finally been delivered is a
-fully-fledged __VUI__ ([Voice User Interface](https://developer.amazon.com/alexa-skills-kit/vui))
+fully-fledged __VUI__ ([Voice User Interface](http://developer.amazon.com/alexa-skills-kit/vui))
 with no keys to press or buttons to push; simply talk to it! Or in other words, a nice
 hands-free option - which is great for preventing distracted drivers.
 
 You can check out my first published Alexa Skill (Word Scramble) here:
 
-    https://www.amazon.com/dp/B078WGVWL2
+    http://www.amazon.com/dp/B078WGVWL2
 
 Or my latest Skill (Peanut Allergy Facts):
 
-    https://www.amazon.com/dp/B07GB4BG4K
+    http://www.amazon.com/dp/B07GB4BG4K
 
 The table of contents is more or less as follows:
 
@@ -52,6 +52,7 @@ The table of contents is more or less as follows:
     * [Glossary](#glossary)
     * [Types of Skills](#types-of-skills)
     * [CanFulfillIntentRequest](#canfulfillintentrequest)
+    * [SessionEndedRequest](#sessionendedrequest
     * [Alexa Intents](#alexa-intents)
     * [Alexa Slots](#alexa-slots)
     * [Memory Usage](#memory-usage)
@@ -73,7 +74,7 @@ The table of contents is more or less as follows:
 ## NLP
 
 If you're here because you are interested in natural language processing (NLP),
-may I suggest you check out my [Speech Recognition](https://github.com/mramshaw/Speech-Recognition)
+may I suggest you check out my [Speech Recognition](http://github.com/mramshaw/Speech-Recognition)
 repo instead? Here I am mostly focussed on Alexa __devices__ and being an
 __Alexa developer__. It is possible to use an Alexa SDK for NLP but I have
 no knowledge of this, sorry.
@@ -155,7 +156,7 @@ However, developing for languages other than English still seems a little proble
 ##### French
 
 For example, the
-[French](https://developer.amazon.com/blogs/alexa/post/eaad8183-585e-4e6c-897d-8710d94b121f/how-to-update-your-skills-for-france)
+[French](http://developer.amazon.com/blogs/alexa/post/eaad8183-585e-4e6c-897d-8710d94b121f/how-to-update-your-skills-for-france)
 deployment instructions. On the other hand, from the standpoint of quality, Alexa's French
 voice is far better than any of Alexa's English voices.
 
@@ -178,7 +179,7 @@ talking to some woman named Alexa ?!?!) it probably makes a good bedside radio/a
 UPDATE: As of September, 2018 there is talk of a `whisper` recognition mode (as far as I
 know, SSML has always supported a whisper mode for Alexa utterances).
 
-    https://developer.amazon.com/blogs/alexa/post/c0e7798d-32bc-4549-9c24-97d204a7bf3a/whisper-to-alexa-and-she-ll-whisper-back
+    http://developer.amazon.com/blogs/alexa/post/c0e7798d-32bc-4549-9c24-97d204a7bf3a/whisper-to-alexa-and-she-ll-whisper-back
 
 > (The U.S. English version will be available in October.)
 
@@ -275,10 +276,10 @@ than the over-used __app__, Alexa developers write __skills__ (but some of the A
 stills discusses skills as if they were apps). The Alexa glossary is actually pretty good
 (also brief) and well worth reading:
 
-    https://developer.amazon.com/docs/ask-overviews/alexa-skills-kit-glossary.html
+    http://developer.amazon.com/docs/ask-overviews/alexa-skills-kit-glossary.html
 
 [As is usually the case, things change quickly in the cloud and the documentation does not
-always keep pace. For instance, as I write this, [Golang](https://github.com/mramshaw/Golang)
+always keep pace. For instance, as I write this, [Golang](http://github.com/mramshaw/Golang)
 is not listed in this Glossary as an option for AWS Lambda functions - and Amazon recently
 added support for Go to Lambda functions. ___Caveat emptor___.]
 
@@ -289,9 +290,9 @@ For a broader view of things (i.e. not just AWS), check out:
 #### Types of Skills
 
 There are various skill types. The main focus here so far has been
-[Custom Skills](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html),
+[Custom Skills](http://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html),
 although 
-[Flash Briefings](https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
+[Flash Briefings](http://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
 (which allow for RSS or JSON feeds) also look pretty interesting. Although getting these to ___pause___ or
 ___stop___ seems to be a little tricky.
 
@@ -300,14 +301,26 @@ ___stop___ seems to be a little tricky.
 In the case where a user does not know the specific __name__ for a skill, this new beta
 offering allows Amazon to select a set of skills that _might_ fulfill the request:
 
-    https://developer.amazon.com/docs/custom-skills/understand-name-free-interaction-for-custom-skills.html
+    http://developer.amazon.com/docs/custom-skills/understand-name-free-interaction-for-custom-skills.html
 
 Currently in beta (as of August 2018), and US-only.
+
+#### SessionEndedRequest
+
+This probably indicates a user timeout.
+
+For more information:
+
+    http://developer.amazon.com/docs/custom-skills/handle-requests-sent-by-alexa.html#sessionendedrequest
+
+Nota bene:
+
+> Your service cannot send back a response to a `SessionEndedRequest`.
 
 #### Alexa Intents
 
 While Alexa provides some very useful
-[Standard Built-in Intents](https://developer.amazon.com/docs/custom-skills/standard-built-in-intents.html#available-standard-built-in-intents)
+[Standard Built-in Intents](http://developer.amazon.com/docs/custom-skills/standard-built-in-intents.html#available-standard-built-in-intents)
 it may be a good idea to extend them with Standard Utterances as follows:
 
     AMAZON.RepeatIntent please repeat
@@ -335,7 +348,7 @@ UPDATE: As of April, 2018 this skill seems to have been withdrawn.
 While Alexa has some very useful built-in slots, it's probably a 'best practice' to define
 custom slots. For one thing, the built-in slots are extensive and it is probably a good
 idea to restrict these quite a bit. Follow the following link for some useful tips on
-[formatting slot values](https://developer.amazon.com/docs/custom-skills/define-the-interaction-model-in-json-and-text.html#cert-custom-slot-types).
+[formatting slot values](http://developer.amazon.com/docs/custom-skills/define-the-interaction-model-in-json-and-text.html#cert-custom-slot-types).
 
 #### Memory Usage
 
@@ -347,7 +360,7 @@ use this as a target, rather than trying to minimize memory usage with procedura
 Rigorous manual testing is of course a first step, but what about automated testing?
 
 Amazon provides a good summary of the various testing options:
-[Why testing and automation matter](https://developer.amazon.com/blogs/alexa/post/e2f3d18c-13ca-4796-bc83-e8a196f20e57/building-engaging-alexa-skills-why-testing-and-automation-matter).
+[Why testing and automation matter](http://developer.amazon.com/blogs/alexa/post/e2f3d18c-13ca-4796-bc83-e8a196f20e57/building-engaging-alexa-skills-why-testing-and-automation-matter).
 
 One interesting quote from the above article:
 
@@ -363,15 +376,15 @@ Alexa:
 
 SDK:
 
-    https://github.com/bespoken/virtual-device-sdk
+    http://github.com/bespoken/virtual-device-sdk
 
 Example:
 
-    https://github.com/bespoken/GuessThePrice
+    http://github.com/bespoken/GuessThePrice
 
 And:
 
-    https://bespoken.io/blog/automated-testing-for-alexa-skills-2/
+    http://bespoken.io/blog/automated-testing-for-alexa-skills-2/
 
 For monitoring your skills in production, logging (see the next section) is essential.
 
@@ -380,7 +393,7 @@ Amazon Cloudwatch alerts can be set to go off if any unexpected circumstances or
 #### Logging
 
 Each invocation (request or reponse) of a Lambda function will generate billing details,
-consisting of three [CloudWatch](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-functions.html)
+consisting of three [CloudWatch](http://docs.aws.amazon.com/lambda/latest/dg/monitoring-functions.html)
 events (a START event, an END event, and a REPORT event). These may be filtered out
 of the CloudWatch console by typing:
 
@@ -397,7 +410,7 @@ be careful about what gets logged - for privacy reasons, if not just to reduce c
 
 Of course, it is entirely possible to create a simple skill (such as a Facts skill) that
 does not require debugging, in which case the performance statistics available from the
-[AWS Lambda console](https://console.aws.amazon.com/lambda/) may be sufficient.
+[AWS Lambda console](http://console.aws.amazon.com/lambda/) may be sufficient.
 
 
 #### Account Linking
@@ -410,7 +423,7 @@ This refers to linking to an Amazon account. There are two groups: location (sel
 and lists. Alexa customers have two default lists: __to-do__ and __shopping__. Access to these
 seems to be standard REST. There are two permissions: __read__ and __write__. Requests are throttled.
 Follow the link for the
-[Permissions API](https://developer.amazon.com/docs/custom-skills/access-the-alexa-shopping-and-to-do-lists.html#list-management-quick-reference).
+[Permissions API](http://developer.amazon.com/docs/custom-skills/access-the-alexa-shopping-and-to-do-lists.html#list-management-quick-reference).
 
 ## Publishing, operations and the competition
 
@@ -453,18 +466,18 @@ The Alexa dashboard is excellent for monitoring purposes.
 
 #### Commercialization
 
-[In-Skill Purchasing](https://developer.amazon.com/alexa-skills-kit/earn) is now generally available.
+[In-Skill Purchasing](http://developer.amazon.com/alexa-skills-kit/earn) is now generally available.
 
 [Even though I was invited to join the __beta__, I still haven't looked into this so cannot comment.]
 
-Another development to watch is [Alexa Traffic Analysis](https://www.alexa.com/siteinfo/aws.org).
+Another development to watch is [Alexa Traffic Analysis](http://www.alexa.com/siteinfo/aws.org).
 
 [I may have mis-read this development. __Alexa.com__ proudly proclaims itself an Amazon company,
  but it may not actually have anything to do with Alexa ___devices___.]
 
 Good demographic data for Alexa is hard to come by, this is all I could find:
 
-    https://www.slideshare.net/stevelsilver/amazon-echo-alexa-demographics-75193964
+    http://www.slideshare.net/stevelsilver/amazon-echo-alexa-demographics-75193964
 
 [Published on Apr 19, 2017]
 
@@ -483,7 +496,7 @@ Alexa Dot on the left, custom hoodie in the background. If you do not have a Wi-
 #### Alexa versus Google’s Assistant
 
 Follow the link for an interesting read about
-[Amazon’s Alexa vs. Google’s Assistant](https://gigaom.com/2017/06/12/amazons-alexa-vs-googles-assistant-same-questions-different-answers/).
+[Amazon’s Alexa vs. Google’s Assistant](http://gigaom.com/2017/06/12/amazons-alexa-vs-googles-assistant-same-questions-different-answers/).
 
 __tl;dr__ Information is contextual and nuanced, and relying verbatim on either of these
 devices is problematic.
@@ -493,16 +506,16 @@ devices is problematic.
 While Amazon provides quite a lot of content related to Alexa, sometimes an external
 source may provide a broader perspective. Some of the following may be of interest:
 
-    https://www.lynda.com/User-Experience-tutorials/UX-Voice-Planning-Implementation/679644-2.html
+    http://www.lynda.com/User-Experience-tutorials/UX-Voice-Planning-Implementation/679644-2.html
 
-    https://softwareengineeringdaily.com/2018/05/18/alexa-voice-design-with-paul-cutsinger/
+    http://softwareengineeringdaily.com/2018/05/18/alexa-voice-design-with-paul-cutsinger/
 
-Note that UX for Voice is __not__ [IVR](https://en.wikipedia.org/wiki/Interactive_voice_response),
+Note that UX for Voice is __not__ [IVR](http://en.wikipedia.org/wiki/Interactive_voice_response),
 which is a much older technology.
 
 ## Icons
 
-Some [Gimp](https://www.gimp.org/) templates
+Some [Gimp](http://www.gimp.org/) templates
 
 ## Python
 
@@ -511,19 +524,20 @@ Some sample Python code
 ## To Do
 
 - [x] Investigate Alexa Demographics
-- [ ] Investigate the use of [Flash Briefings](https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
-- [x] Investigate the use of [DynamoDB](https://aws.amazon.com/dynamodb/) as a back end
-- [x] Investigate the use of [Alexa Custom Slots](https://developer.amazon.com/docs/custom-skills/slot-type-reference.html)
+- [ ] Investigate the use of [Flash Briefings](http://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html)
+- [x] Investigate the use of [DynamoDB](http://aws.amazon.com/dynamodb/) as a back end
+- [x] Investigate the use of [Alexa Custom Slots](http://developer.amazon.com/docs/custom-skills/slot-type-reference.html)
 - [x] Investigate the use of __Account Linking__ and __Permissions__
 - [x] Investigate __Cloudwatch Event Logging__
 - [x] Investigate __Cloudwatch Event Logging filters__
 - [ ] Investigate __Cloudwatch Alerts__
 - [ ] Investigate __CanFulfillIntentRequest__ once it comes out of Beta or becomes multi-language
-- [ ] Investigate [Alexa Automated Testing](https://github.com/alexa/skill-sample-nodejs-test-automation)
-- [ ] Investigate [Alexa Load Testing](https://github.com/alexa/skill-sample-node-js-build-scale-test)
-- [ ] Investigate [Alexa Testing](https://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
-- [ ] Investigate [Alexa Timeouts](https://github.com/nickclaw/alexa-ability-timeout)
-- [ ] Investigate [Virtual Alexa](https://github.com/bespoken/virtual-alexa) [also looks pretty spiffy]
+- [ ] Investigate [Alexa Automated Testing](http://github.com/alexa/skill-sample-nodejs-test-automation)
+- [ ] Investigate [Alexa Load Testing](http://github.com/alexa/skill-sample-node-js-build-scale-test)
+- [ ] Investigate [Alexa Testing](http://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
+- [ ] Investigate [Alexa Timeouts](http://github.com/nickclaw/alexa-ability-timeout)
+- [ ] Investigate [Virtual Alexa](http://github.com/bespoken/virtual-alexa) [also looks pretty spiffy]
+- [x] Investigate __SessionEndedRequest__
 - [x] Investigate Internationalization (i18n) and Localization (L10n)
 - [x] Investigate Alexa’s French voice
 - [x] Investigate Google’s Assistant
