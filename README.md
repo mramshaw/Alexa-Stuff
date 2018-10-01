@@ -165,7 +165,7 @@ typos and grammatical errors. Any errors will result in a certification failure.
 
 Check out the French version of my Peanut Allergy Facts skill:
 
-    http://www.amazon.fr/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K/ref=sr_1_2 
+    http://www.amazon.fr/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K
 
 Interestingly, for addressing Alexa devices Amazon prefer the familiar ___tu___ form over the
 more formal ___vous___ form. Using ___vous___ forms in either the launch phrases or the skill
