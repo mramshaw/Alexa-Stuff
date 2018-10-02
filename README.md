@@ -32,7 +32,7 @@ Or my latest Skill (Peanut Allergy Facts):
 
     http://www.amazon.com/dp/B07GB4BG4K
 
-The table of contents is more or less as follows:
+## Contents
 
 * [NLP](#nlp)
 * [Hardware](#hardware)
@@ -42,6 +42,7 @@ The table of contents is more or less as follows:
     * [Volume](#volume)
     * [Languages](#languages)
         * [French](#french)
+        * [Spanish](#spanish)
 * [So what's it good for?](#so-whats-it-good-for)
     * [Alarms](#alarms)
     * [As a reference](#as-a-reference)
@@ -174,6 +175,13 @@ copy will result in the skill being rejected.
 There can be some trivial certification failures, which seem to be Amazon protecting its
 brand. For instance, they prefer the word "skill" to "compétence" (which is probably more
 correct).
+
+##### Spanish
+
+Alexa has voices for Spanish, both for es-ES (Spain) and es-MX (Mexico).
+
+To my ear, neither of them is of the same quality as the French voice, but your mileage
+may vary.
 
 ## So what's it good for?
 
@@ -550,4 +558,5 @@ Some sample Python code
 - [x] Investigate __SessionEndedRequest__
 - [x] Investigate Internationalization (i18n) and Localization (L10n)
 - [x] Investigate Alexa’s French voice
+- [x] Investigate Alexa’s Spanish voices
 - [x] Investigate Google’s Assistant
