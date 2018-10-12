@@ -176,6 +176,13 @@ There can be some trivial certification failures, which seem to be Amazon protec
 brand. For instance, they prefer the word "skill" to "compétence" (which is probably more
 correct).
 
+
+UPDATE: As of October 10, 2018 Amazon announced support for
+[French-Canadian French](https://developer.amazon.com/blogs/alexa/post/9fbab4e0-a4ad-4116-8810-84590e04f762/alexa-skills-kit-expands-to-include-canadian-french)
+(`fr-CA` as opposed to `fr-FR`). The
+[developer instructions](https://developer.amazon.com/blogs/alexa/post/a35a1a38-07fd-4d38-a99c-8d7a3f0be34b/how-to-update-your-alexa-skills-for-french-speakers-in-canada)
+indicate that this may involve using a new `i18n` module.
+
 ##### Spanish
 
 Alexa has voices for Spanish, both for es-ES (Spain) and es-MX (Mexico).
