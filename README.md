@@ -68,6 +68,7 @@ Or my latest Skill (Peanut Allergy Facts):
     * [Swag](#swag)
     * [Alexa versus Google’s Assistant](#alexa-versus-googles-assistant)
 * [UX for Voice](#ux-for-voice)
+* [Privacy](#privacy)
 * [Icons](#icons)
 * [Python](#python)
 * [To Do](#to-do)
@@ -537,6 +538,24 @@ source may provide a broader perspective. Some of the following may be of intere
 
 Note that UX for Voice is __not__ [IVR](http://en.wikipedia.org/wiki/Interactive_voice_response),
 which is a much older technology.
+
+## Privacy
+
+From a `medium.com` article:
+
+> We expect to enjoy privacy in our own homes, but this is ultimately incompatible
+> with the reality that the data collected by your Echo belongs to Amazon, and not you.
+
+And:
+
+> So while virtual assistants themselves are not inherently problematic,
+> they do bring to the fore many of the problems that have built up around
+> our use of centralised data-driven services, and especially so for home
+> Internet of Things devices.
+
+Both from:
+
+    http://medium.com/oxford-university/whos-storing-your-conversations-e5736fc5d9f5
 
 ## Icons
 
