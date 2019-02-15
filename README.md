@@ -371,6 +371,16 @@ UPDATE: As of April, 2018 this skill seems to have been withdrawn.
 
 #### Alexa Slots
 
+It's a good idea to check up on the
+[defined Alexa slots](https://developer.amazon.com/docs/custom-skills/slot-type-reference.html)
+when considering a voice interaction. Using a predefined slot may well save both you and
+your users some frustration while getting to grips with using Alexa. The defined slots are
+mainly oriented to the Amazon shopping experience, but some of them may well be useful to
+Alexa developers. They add new
+[List Slot Types](http://developer.amazon.com/docs/custom-skills/slot-type-reference.html#list-slot-types)
+from time to time (such as `AMAZON.Animal`), so it's worth checking back periodically.
+Be careful not to use any slot types marked as __Public beta__.
+
 While Alexa has some very useful built-in slots, it's probably a 'best practice' to define
 custom slots. For one thing, the built-in slots are extensive and it is probably a good
 idea to restrict these quite a bit. Follow the following link for some useful tips on
