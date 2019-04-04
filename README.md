@@ -592,6 +592,7 @@ Some sample Python code
 - [ ] Investigate __CanFulfillIntentRequest__ once it comes out of Beta or becomes multi-language
 - [ ] Investigate [Alexa Automated Testing](http://github.com/alexa/skill-sample-nodejs-test-automation)
 - [ ] Investigate [Alexa Load Testing](http://github.com/alexa/skill-sample-node-js-build-scale-test)
+- [ ] Investigate [Alexa More Intent](http://developer.amazon.com/docs/custom-skills/standard-built-in-intents.html#amazonmoreintent)
 - [ ] Investigate [Alexa Testing](http://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
 - [ ] Investigate [Alexa Timeouts](http://github.com/nickclaw/alexa-ability-timeout)
 - [ ] Investigate [Virtual Alexa](http://github.com/bespoken/virtual-alexa) [also looks pretty spiffy]
