@@ -184,6 +184,10 @@ UPDATE: As of October 10, 2018 Amazon announced support for
 [developer instructions](https://developer.amazon.com/blogs/alexa/post/a35a1a38-07fd-4d38-a99c-8d7a3f0be34b/how-to-update-your-alexa-skills-for-french-speakers-in-canada)
 indicate that this may involve using a new `i18n` module.
 
+FURTHER UPDATE: As of March 21, 2019 Amazon have released a new voice model for French-Canadian French.
+It seems that there are some substantial differences that required training a unique voice model, as reported
+by the [CBC](http://www.cbc.ca/news/canada/montreal/alexa-learns-quebec-french-1.5078881).
+
 ##### Spanish
 
 Alexa has voices for Spanish, both for es-ES (Spain) and es-MX (Mexico).
