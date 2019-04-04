@@ -49,6 +49,7 @@ Or my latest Skill (Peanut Allergy Facts):
     * [As a sleep aid](#as-a-sleep-aid)
     * [Wikipedia](#wikipedia)
 * [Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
+    * [Alexa-hosted Skills](#alexa-hosted-skills)
     * [Trivia](#trivia)
     * [Glossary](#glossary)
     * [Types of Skills](#types-of-skills)
@@ -186,7 +187,9 @@ indicate that this may involve using a new `i18n` module.
 
 FURTHER UPDATE: As of March 21, 2019 Amazon have released a new voice model for French-Canadian French.
 It seems that there are some substantial differences that required training a unique voice model, as reported
-by the [CBC](http://www.cbc.ca/news/canada/montreal/alexa-learns-quebec-french-1.5078881).
+by the [CBC](http://www.cbc.ca/news/canada/montreal/alexa-learns-quebec-french-1.5078881). In the email
+I received from Amazon on March 22nd, they refer to "Canadian-French" - but the required language setting
+remains `French (Canada)`.
 
 ##### Spanish
 
@@ -206,6 +209,12 @@ know, SSML has always supported a whisper mode for Alexa utterances).
     http://developer.amazon.com/blogs/alexa/post/c0e7798d-32bc-4549-9c24-97d204a7bf3a/whisper-to-alexa-and-she-ll-whisper-back
 
 > (The U.S. English version will be available in October.)
+
+Most of the following can also be done from a mobile phone, which is only slightly more
+inconvenient than speaking to an Alexa device. Using an Alexa device is almost always a
+hands-free operation - which is generally a little more convenient. On the other hand,
+Alexa will ___only___ respond to a [wake word](#wake-word) whereas a mobile phone can be
+very susceptible to room noise and chatter (but does not need a wake word).
 
 #### Alarms
 
@@ -261,6 +270,32 @@ Perhaps my favourite skill:
 ## Bits and bobs of stuff for Alexa development
 
 Now follows some random stuff loosely oriented around being an Alexa developer.
+
+#### Alexa-hosted Skills
+
+Amazon now offers a beta version of
+[Alexa-hosted Skills](http://developer.amazon.com/docs/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html)
+which can greatly simplify the development and deployment process. It doesn't even
+require an AWS account! [But it is limited to the [free tier](http://aws.amazon.com/free/)
+options and limitations.]
+
+One caveat: only __Node.js version 8__ is supported at present. However, this is not
+really that much of an issue - I received an email from them on March 24th warning
+me that __Node.js version 6__ would be declared End-of-Life (EOL) on April 2019.
+
+As Node.js has the largest attack surface and greatest number of exploits of any
+modern language, this is actually good news. The roll-out is not too bad either:
+slightly more than 30 days (actually 30 days plus a week) warning of the stopping
+of Node.js 6 activation (April 30) and then 30 days more before Node.js is fully
+shelved (May 30).
+
+[The above only applies to AWS Lambda functions.]
+
+Amazon provides some reasons:
+
+    http://aws.amazon.com/blogs/compute/node-js-8-10-runtime-now-available-in-aws-lambda/
+
+[Well worth a read.]
 
 #### Trivia
 
@@ -596,6 +631,7 @@ Some sample Python code
 - [ ] Investigate [Alexa Testing](http://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
 - [ ] Investigate [Alexa Timeouts](http://github.com/nickclaw/alexa-ability-timeout)
 - [ ] Investigate [Virtual Alexa](http://github.com/bespoken/virtual-alexa) [also looks pretty spiffy]
+- [ ] Try developing an [Alexa-hosted Skill](http://developer.amazon.com/docs/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html)
 - [x] Investigate __SessionEndedRequest__
 - [x] Investigate Internationalization (i18n) and Localization (L10n)
 - [x] Investigate Alexa’s French voice
