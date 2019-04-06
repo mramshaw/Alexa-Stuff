@@ -295,7 +295,7 @@ Amazon provides some reasons:
 
     http://aws.amazon.com/blogs/compute/node-js-8-10-runtime-now-available-in-aws-lambda/
 
-[Well worth a read.]
+[Well worth a read. __TL;DR__ Node.js 8 features ___async/await___ which really simplifies promises.]
 
 #### Trivia
 
