@@ -50,6 +50,7 @@ Or my latest Skill (Peanut Allergy Facts):
     * [Wikipedia](#wikipedia)
 * [Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
     * [Alexa-hosted Skills](#alexa-hosted-skills)
+    * [Node.js 8](#node-js-8)
     * [Trivia](#trivia)
     * [Glossary](#glossary)
     * [Types of Skills](#types-of-skills)
@@ -279,9 +280,25 @@ which can greatly simplify the development and deployment process. It doesn't ev
 require an AWS account! [But it is limited to the [free tier](http://aws.amazon.com/free/)
 options and limitations.]
 
-One caveat: only __Node.js version 8__ is supported at present. However, this is not
-really that much of an issue - I received an email from them on March 24th warning
-me that __Node.js version 6__ would be declared End-of-Life (EOL) on April 2019.
+One caveat: only __Node.js version 8__ is supported at present.
+
+In my opinion Amazon has greatly simplified the initial coding experience, making
+Alexa Skills a great deal more accessible to beginners. What is not clear to me is
+how easy it might be to migrate test code into a production environment.
+
+For my purposes I will be sticking with my established methods - and will not be
+writing Alexa-hosted Skills.
+
+#### Node.js 8
+
+Although there are many language options in terms of writing Lambda functions, in
+my opinion __Node.js__ is possibly the best choice at present - both for example
+code and support from the Lambda functions dashboard.
+
+One problem with coding in the Cloud is the necessity to upgrade software according
+to a Cloud Provider's timetable. For instance, I received an email from Amazon on
+March 24th warning me that __Node.js version 6__ would be declared End-of-Life (EOL)
+on April 2019.
 
 As Node.js has the largest attack surface and greatest number of exploits of any
 modern language, this is actually good news. The roll-out is not too bad either:
@@ -291,7 +308,7 @@ shelved (May 30).
 
 [The above only applies to AWS Lambda functions.]
 
-Amazon provides some reasons:
+Amazon provides some background on why upgrading to Node.js version 8 is a good idea:
 
     http://aws.amazon.com/blogs/compute/node-js-8-10-runtime-now-available-in-aws-lambda/
 
@@ -631,7 +648,7 @@ Some sample Python code
 - [ ] Investigate [Alexa Testing](http://github.com/BrianMacIntosh/alexa-skill-test-framework) [looks pretty spiffy]
 - [ ] Investigate [Alexa Timeouts](http://github.com/nickclaw/alexa-ability-timeout)
 - [ ] Investigate [Virtual Alexa](http://github.com/bespoken/virtual-alexa) [also looks pretty spiffy]
-- [ ] Try developing an [Alexa-hosted Skill](http://developer.amazon.com/docs/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html)
+- [x] Investigate [Alexa-hosted Skills](http://developer.amazon.com/docs/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html)
 - [x] Investigate __SessionEndedRequest__
 - [x] Investigate Internationalization (i18n) and Localization (L10n)
 - [x] Investigate Alexa’s French voice
