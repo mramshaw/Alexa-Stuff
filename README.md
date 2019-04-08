@@ -50,7 +50,7 @@ Or my latest Skill (Peanut Allergy Facts):
     * [Wikipedia](#wikipedia)
 * [Bits and bobs of stuff for Alexa development](#bits-and-bobs-of-stuff-for-alexa-development)
     * [Alexa-hosted Skills](#alexa-hosted-skills)
-    * [Node.js 8](#node-js-8)
+    * [Node.js 8](#nodejs-8)
     * [Trivia](#trivia)
     * [Glossary](#glossary)
     * [Types of Skills](#types-of-skills)
@@ -288,6 +288,10 @@ how easy it might be to migrate test code into a production environment.
 
 For my purposes I will be sticking with my established methods - and will not be
 writing Alexa-hosted Skills.
+
+[UPDATE: there is a "Promote to live" button for Alexa-hosted Skills which I missed.
+ It may very well be that Amazon handles the test -> production migration, although
+ I still need to check this out.]
 
 #### Node.js 8
 
