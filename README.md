@@ -280,7 +280,8 @@ which can greatly simplify the development and deployment process. It doesn't ev
 require an AWS account! [But it is limited to the [free tier](http://aws.amazon.com/free/)
 options and limitations.]
 
-One caveat: only __Node.js version 8__ is supported at present.
+Caveats: only __Node.js version 8__ is supported at present; and session data has
+changed (if I read things aright) from DynamoDB persistence to S3 persistence.
 
 In my opinion Amazon has greatly simplified the initial coding experience, making
 Alexa Skills a great deal more accessible to beginners. What is not clear to me is
@@ -292,6 +293,39 @@ writing Alexa-hosted Skills.
 [UPDATE: there is a "Promote to live" button for Alexa-hosted Skills which I missed.
  It may very well be that Amazon handles the test -> production migration, although
  I still need to check this out.]
+
+The Amazon (and Alexa) developer experience continues to evolve by leaps and bounds.
+While I have not always been a fan of some of their "improvements" I have to say
+that I am a fan of ___Lambda Layers___ (released November 2018), which you can read
+about here:
+
+    http://aws.amazon.com/about-aws/whats-new/2018/11/aws-lambda-now-supports-custom-runtimes-and-layers/
+
+You can find the developer documentation here:
+
+    http://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html
+
+I am currently considering updating all of my Node.js functions from Node.js 6
+to Node.js 8, so the following feature may well save me some work:
+
+> Lambda Layers are a new type of artifact that can contain arbitrary code and data,
+> and may be referenced by zero, one, or more functions at the same time. Lambda
+> functions in a serverless application typically share common dependencies such as
+> SDKs, frameworks, and now runtimes. With layers, you can centrally manage common
+> components across multiple functions enabling better code reuse. To use layers,
+> you simply put your common code in a zip file, and upload it to Lambda as a layer.
+> You then configure your functions to reference it.
+
+As this will enable me to provision and/or update a single Node.js runtime, I
+really think this is a very welcome improvement over the current situation (of
+having separate runtimes for each Lambda function).
+
+As it will __also__ enable AWS console editing of the source code of my Lambda
+functions, I think this is a big win.
+
+Considering the hazy documentation about Alexa-hosted Skills (which are still
+a beta offering) I think separate back-end Lambda functions (along with perhaps
+a common Lambda Layer) will continue to be my preferred arctitecture.
 
 #### Node.js 8
 
@@ -448,7 +482,7 @@ idea to restrict these quite a bit. Follow the following link for some useful ti
 
 #### Memory Usage
 
-The smallest possible allocation for a Lambda Function is 128 MB. So it is a good idea to
+The smallest possible allocation for a Lambda function is 128 MB. So it is a good idea to
 use this as a target, rather than trying to minimize memory usage with procedural code.
 
 #### Testing
