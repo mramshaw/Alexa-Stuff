@@ -10,7 +10,7 @@ UPDATE: As of April, 2019 it looks like the Alexa-hosted Skills beta offering al
 
 DynamoDB is not expensive, but it's not free either.
 
-On the other hand, DynamoDB integration with node.js is painless.
+On the other hand, DynamoDB integration with node.js is relatively painless.
 
 ## Integration with node.js
 
@@ -25,6 +25,14 @@ exports.handler = function (event, context, callback) {
 ```
 
 That one line of code is all that's needed!
+
+## Runtime
+
+Provision the
+[DynamoDB Persistence Adapter](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs/tree/2.0.x/ask-sdk-dynamodb-persistence-adapter)
+as follows:
+
+    $ npm install --save ask-sdk-dynamodb-persistence-adapter
 
 ## Permissions
 
@@ -66,5 +74,6 @@ For more on Werner Vogels:
 
 ## To Do
 
+- [x] Add a link for the ASK SDK v2 DynamoDB Persistence Adapter
 - [ ] Investigate DynamoDB Alerts
 - [ ] Investigate Auto-Scaling

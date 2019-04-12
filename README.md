@@ -179,7 +179,6 @@ There can be some trivial certification failures, which seem to be Amazon protec
 brand. For instance, they prefer the word "skill" to "compétence" (which is probably more
 correct).
 
-
 UPDATE: As of October 10, 2018 Amazon announced support for
 [French-Canadian French](https://developer.amazon.com/blogs/alexa/post/9fbab4e0-a4ad-4116-8810-84590e04f762/alexa-skills-kit-expands-to-include-canadian-french)
 (`fr-CA` as opposed to `fr-FR`). The
@@ -190,14 +189,14 @@ FURTHER UPDATE: As of March 21, 2019 Amazon have released a new voice model for 
 It seems that there are some substantial differences that required training a unique voice model, as reported
 by the [CBC](http://www.cbc.ca/news/canada/montreal/alexa-learns-quebec-french-1.5078881). In the email
 I received from Amazon on March 22nd, they refer to "Canadian-French" - but the required language setting
-remains `French (Canada)`.
+remains `French (Canada)`. In my opinion the French-Canadian voice and model far exceed any of the English
+equivalents (and so are on par with the original French voice and model) but your mileage may vary.
 
 ##### Spanish
 
 Alexa has voices for Spanish, both for es-ES (Spain) and es-MX (Mexico).
 
-To my ear, neither of them is of the same quality as the French voice, but your mileage
-may vary.
+To my ear, neither of them is of the same quality as the French voices, but that may be a personal thing.
 
 ## So what's it good for?
 
@@ -578,7 +577,12 @@ has some bugs in it. There is also a __Skills Beta Testing__ program (with 500 i
 looks worthwhile.
 
 [It took eight calendar days to get my first Alexa skill certified. But that skill, resubmitted
-later with a few minor improvements, only took a day or so to get re-certified.]
+ later with a few minor improvements, only took a day or so to get re-certified.]
+
+UPDATE: Amazon now posts a certification results ETA on their developer console (for a skill
+submitted April 12, 2019 they are advising April 30, 2019 - which is 18 days, or 12 business
+days. So certification has gotten lengthier over the years. Even so, I expect my skill - which
+has 9 language variations - will be either certified or rejected in a matter of days).
 
 #### Monitoring and Versioning
 
