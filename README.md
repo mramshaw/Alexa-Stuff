@@ -330,12 +330,12 @@ a common Lambda Layer) will continue to be my preferred arctitecture.
 
 Although there are many language options in terms of writing Lambda functions, in
 my opinion __Node.js__ is possibly the best choice at present - both for example
-code and support from the Lambda functions dashboard.
+code and support from the AWS Lambda functions dashboard.
 
 One problem with coding in the Cloud is the necessity to upgrade software according
 to a Cloud Provider's timetable. For instance, I received an email from Amazon on
 March 24th warning me that __Node.js version 6__ would be declared End-of-Life (EOL)
-on April 2019.
+on April 2019 (this can be as simple as selecting a different Node.js runtime).
 
 As Node.js has the largest attack surface and greatest number of exploits of any
 modern language, this is actually good news. The roll-out is not too bad either:
@@ -529,7 +529,28 @@ of the CloudWatch console by typing:
     -START -END -REPORT
 
 into the `Filter events` text box (sadly these must be typed in __each and every__ time;
-perhaps the recommended way to do this is to create a custom __Dashboard__).
+a better way to do this is to use CloudWatch Logs Insights and then create a custom
+ __Cloudwatch Dashboard__).
+
+Amazon provides useful query examples, both in the Cloudwatch Insights console as well as at:
+
+    http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-examples.html
+
+The following code can be used to filter out billing details:
+
+```
+fields @message |
+filter @type != "REPORT"
+ and @type != "START"
+ and @type != "END"
+```
+
+The following code can be used to only show exceptions:
+
+```
+fields @message |
+filter @message like /Exception/
+```
 
 Due to the voluminous billing details, the urge to log each and every interesting user
 interaction is probably to be avoided. Even so, for debugging reasons it is important to
@@ -596,7 +617,7 @@ be created for you.
 While it may be tempting to re-use any existing Lambda functions, it is probably a better
 idea to create a new Lambda function for each iteration (version) of your Alexa skill.
 
-The Alexa dashboard is excellent for monitoring purposes.
+The Alexa developer dashboard is excellent for monitoring purposes.
 
 #### Commercialization
 
@@ -682,6 +703,8 @@ Some sample Python code
 - [x] Investigate the use of __Account Linking__ and __Permissions__
 - [x] Investigate __Cloudwatch Event Logging__
 - [x] Investigate __Cloudwatch Event Logging filters__
+- [x] Investigate __CloudWatch Logs Insights__
+- [x] Investigate __Cloudwatch Dashboards__
 - [ ] Investigate __Cloudwatch Alerts__
 - [ ] Investigate __CanFulfillIntentRequest__ once it comes out of Beta or becomes multi-language
 - [ ] Investigate [Alexa Automated Testing](http://github.com/alexa/skill-sample-nodejs-test-automation)
