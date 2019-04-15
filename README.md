@@ -71,6 +71,8 @@ Or my latest Skill (Peanut Allergy Facts):
     * [Alexa versus Google’s Assistant](#alexa-versus-googles-assistant)
 * [UX for Voice](#ux-for-voice)
 * [Privacy](#privacy)
+    * [medium.com](#mediumcom)
+    * [bloomberg.com](#bloombergcom)
 * [Icons](#icons)
 * [Python](#python)
 * [To Do](#to-do)
@@ -670,6 +672,8 @@ which is a much older technology.
 
 ## Privacy
 
+#### medium.com
+
 From a `medium.com` article:
 
 > We expect to enjoy privacy in our own homes, but this is ultimately incompatible
@@ -685,6 +689,24 @@ And:
 Both from:
 
     http://medium.com/oxford-university/whos-storing-your-conversations-e5736fc5d9f5
+
+#### bloomberg.com
+
+From a `bloomberg.com` article:
+
+> Amazon.com Inc. employs thousands of people around the world to help improve the
+> Alexa digital assistant powering its line of Echo speakers. The team listens to
+> voice recordings captured in Echo owners’ homes and offices. The recordings are
+> transcribed, annotated and then fed back into the software as part of an effort
+> to eliminate gaps in Alexa’s understanding of human speech and help it better
+> respond to commands.
+
+From:
+
+    https://www.bloomberg.com/news/articles/2019-04-10/is-anyone-listening-to-you-on-alexa-a-global-team-reviews-audio
+
+The article is well worth a read as it gives quite a lot of background on Amazon
+and their voice training practices.
 
 ## Icons
 
