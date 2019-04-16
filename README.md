@@ -198,6 +198,9 @@ equivalents (and so are on par with the original French voice and model) but you
 
 Alexa has voices for Spanish, both for es-ES (Spain) and es-MX (Mexico).
 
+As with [French](#french), Amazon prefer the familiar ___tú___ form over the more formal ___usted___ form.
+Use of the formal forms in either the launch phrases or the skill copy will result in the skill being rejected.
+
 To my ear, neither of them is of the same quality as the French voices, but that may be a personal thing.
 
 ## So what's it good for?
@@ -587,12 +590,18 @@ in the documentation somewhere - but, as often happens with AWS documentation, I
 any reference to this now.
 
 It's worth checking the certification requirements very carefully before submitting a skill.
+Amazon will cross-reference these if they reject your skill submission:
+
+    http://developer.amazon.com/docs/custom-skills/voice-interface-and-user-experience-testing-for-a-custom-skill.html
 
 They can - and apparently _will_ - reject a skill for fairly arbitrary reasons, for instance
 if it _might_ compete with their __Audible.com__ business. And they seem to be prone to
 changing the rules to suit themselves - at the moment, advertising is a no-no, but once
 they figure out how to commercialize (no pun intended) it I am sure it will again become
 an option.
+
+Even so, their rejection emails are very specific and actually quite helpful - they highlight
+the rejected sentences and also provide copy that they would prefer.
 
 Note that certification testing for compliance is not the same thing as logic testing, which
 is a developer responsibility. It's entirely possible to have a skill certified that still
@@ -604,8 +613,9 @@ looks worthwhile.
 
 UPDATE: Amazon now posts a certification results ETA on their developer console (for a skill
 submitted April 12, 2019 they are advising April 30, 2019 - which is 18 days, or 12 business
-days. So certification has gotten lengthier over the years. Even so, I expect my skill - which
-has 9 language variations - will be either certified or rejected in a matter of days).
+days. So certification has gotten lengthier over the years. It has also gotten more stringent,
+which is a good thing - I had an initial rejection April 15 (so about four days) which took
+exception to to some French copy that had previously passed muster.
 
 #### Monitoring and Versioning
 
@@ -671,6 +681,12 @@ Note that UX for Voice is __not__ [IVR](http://en.wikipedia.org/wiki/Interactive
 which is a much older technology.
 
 ## Privacy
+
+There are some troubling privacy aspects to having voice devices in your household or
+place of work. Now that adoption of these devices has become widespread the situation
+can only be expected to evolve.
+
+One or two interesting quotes follow.
 
 #### medium.com
 
