@@ -63,6 +63,7 @@ Or my latest Skill (Peanut Allergy Facts):
     * [Logging](#logging)
     * [Account Linking](#account-linking)
     * [Permissions](#permissions)
+    * [Endpoints](#endpoints)
 * [Publishing, operations and the competition](#publishing-operations-and-the-competition)
     * [Certification](#certification)
     * [Monitoring and Versioning](#monitoring-and-versioning)
@@ -341,6 +342,7 @@ One problem with coding in the Cloud is the necessity to upgrade software accord
 to a Cloud Provider's timetable. For instance, I received an email from Amazon on
 March 24th warning me that __Node.js version 6__ would be declared End-of-Life (EOL)
 on April 2019 (this can be as simple as selecting a different Node.js runtime).
+[I also received a follow-up email on April 16th. Kudos to Amazon.]
 
 As Node.js has the largest attack surface and greatest number of exploits of any
 modern language, this is actually good news. The roll-out is not too bad either:
@@ -580,14 +582,24 @@ seems to be standard REST. There are two permissions: __read__ and __write__. Re
 Follow the link for the
 [Permissions API](http://developer.amazon.com/docs/custom-skills/access-the-alexa-shopping-and-to-do-lists.html#list-management-quick-reference).
 
+#### Endpoints
+
+For the purposes of providing content distribution, the region mappings are as follows:
+
+Alexa Developer Console | Region | AWS internal region | Shows in AWS Console as
+---- | ---------------- | ------ | ------------------- | -----------------------
+North America | US East (N. Virgina) | us-east-1 | N. Virginia
+Europe and India | EU (Ireland) | eu-west-1 | Ireland
+Far East | Asia-Pacific (Tokyo) | ap-northeast-1 | Tokyo
+
+[The `Endpoints` panel on the Alexa Developer Console provides popups that show recommendations.]
+
 ## Publishing, operations and the competition
 
 #### Certification
 
-Once your Alexa skill is complete, you can choose to submit it for certification. I _thought_
-this would take up to five business days (so basically a calendar week) as I am sure I read this
-in the documentation somewhere - but, as often happens with AWS documentation, I cannot find
-any reference to this now.
+Once your Alexa skill is complete, you can submit it for certification. Amazon posts a
+certification results ETA on their developer console.
 
 It's worth checking the certification requirements very carefully before submitting a skill.
 Amazon will cross-reference these if they reject your skill submission:
@@ -601,21 +613,24 @@ they figure out how to commercialize (no pun intended) it I am sure it will agai
 an option.
 
 Even so, their rejection emails are very specific and actually quite helpful - they highlight
-the rejected sentences and also provide copy that they would prefer.
+the rejected sentences and also provide copy that they would prefer. It is worth noting that
+the name of your skill must be consistent in all usages - even if this might conflict with
+normal grammatical usage (think of this as "branding").
 
 Note that certification testing for compliance is not the same thing as logic testing, which
 is a developer responsibility. It's entirely possible to have a skill certified that still
 has some bugs in it. There is also a __Skills Beta Testing__ program (with 500 invites) which
 looks worthwhile.
 
-[It took eight calendar days to get my first Alexa skill certified. But that skill, resubmitted
- later with a few minor improvements, only took a day or so to get re-certified.]
-
-UPDATE: Amazon now posts a certification results ETA on their developer console (for a skill
-submitted April 12, 2019 they are advising April 30, 2019 - which is 18 days, or 12 business
-days. So certification has gotten lengthier over the years. It has also gotten more stringent,
-which is a good thing - I had an initial rejection April 15 (so about four days) which took
-exception to to some French copy that had previously passed muster.
+Certification has gotten lengthier and more stringent over the years (which is a good thing).
+It took eight calendar days to get my first Alexa skill certified. That skill, resubmitted
+later with a few minor improvements, only took a day or so to get re-certified. A skill
+submitted April 12, 2019 was initially scheduled for an April 30th notification - so 18 days,
+or 12 business days (almost twice as long as a few years ago - but also featured 9 language
+variations). The initial rejection came April 15 (so about four calendar days) - and took
+issue with some French copy that had previously passed muster (along with some other things).
+As VUIs (Voice User Interfaces) continue to gain acceptance, it essential that the quality
+of the user experience continues to improve.
 
 #### Monitoring and Versioning
 
