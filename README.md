@@ -586,11 +586,11 @@ Follow the link for the
 
 For the purposes of providing content distribution, the region mappings are as follows:
 
-Alexa Developer Console | Region | AWS internal region | Shows in AWS Console as
----- | ---------------- | ------ | ------------------- | -----------------------
-North America | US East (N. Virgina) | us-east-1 | N. Virginia
-Europe and India | EU (Ireland) | eu-west-1 | Ireland
-Far East | Asia-Pacific (Tokyo) | ap-northeast-1 | Tokyo
+Alexa Developer Console|Region|AWS internal region|Shows in AWS Console as
+-----------------------|------|-------------------|-----------------------
+North America|US East (N. Virgina)|us-east-1|N. Virginia
+Europe and India|EU (Ireland)|eu-west-1|Ireland
+Far East|Asia-Pacific (Tokyo)|ap-northeast-1|Tokyo
 
 [The `Endpoints` panel on the Alexa Developer Console provides popups that show recommendations.]
 
