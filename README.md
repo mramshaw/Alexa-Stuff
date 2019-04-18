@@ -588,11 +588,28 @@ For the purposes of providing content distribution, the region mappings are as f
 
 Alexa Developer Console|Region|AWS internal region|Shows in AWS Console as
 -----------------------|------|-------------------|-----------------------
-North America|US East (N. Virgina)|us-east-1|N. Virginia
+Default|US West (Oregon)|us-west-2|Oregon
+North America|US East (N. Virginia)|us-east-1|N. Virginia
 Europe and India|EU (Ireland)|eu-west-1|Ireland
 Far East|Asia-Pacific (Tokyo)|ap-northeast-1|Tokyo
 
-[The `Endpoints` panel on the Alexa Developer Console provides popups that show recommendations.]
+[The `Endpoints` panel on the Alexa Developer Console provides popups that show recommendations.
+ You are limited to regions that provide Lambda functions (initially only North Virginia) - here
+ I have chosen to make my default region Oregon (i.e. on the West Coast) for content distribution
+ purposes but North Virginia might be a better choice.]
+
+Bear in mind that any needed ancillary resources (S3, DynamoDB tables) must also be duplicated
+to all appropriate regions. For databases, the thorny issue of whether or not to replicate the
+databases across regions needs to be considered.
+
+Interestingly enough, IAM permissions are the exception as they are __Global__ (i.e. apply to
+all regions). Following best practices such as ___Least Privilege___, this means provisioning
+and allocating separate IAM policies and roles for each region.
+
+[Cloudwatch Dashboards are also Global, so that once defined they are available in all regions.]
+
+With some jiggery-pokery, the Endpoints panel can be used to test each and every Lambda function
+(endpoint), but the Alexa model must be saved & rebuilt every time the endpoints are changed.
 
 ## Publishing, operations and the competition
 

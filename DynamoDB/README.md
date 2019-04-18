@@ -34,6 +34,13 @@ as follows:
 
     $ npm install --save ask-sdk-dynamodb-persistence-adapter
 
+## Performance
+
+If performance becomes an issue, it is always possible to add a caching layer with
+[Amazon DynamoDB Accelerator (DAX)](http://aws.amazon.com/dynamodb/dax/).
+
+[Performance generally doesn't seem to be an issue with Alexa, but may become an issue in time.]
+
 ## Permissions
 
 Best to allocate 'YourTableName' manually rather than give Create permission.
