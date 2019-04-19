@@ -73,6 +73,14 @@ The White Paper (included here):
 
     http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf
 
+A nice article on the use case for DynamoDB:
+
+    http://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
+
+![AWS Databases compared](images/databases.png)
+
+[This image is from the preceding article.]
+
 ## Other links
 
 For more on Werner Vogels:
