@@ -1,5 +1,7 @@
 # DynamoDB
 
+![AWS DynamoDB](images/Database_AmazonDynamoDB.svg)
+
 [This information is correct as of January 5, 2018 but things change rapidly in the cloud and documentation becomes out-of-date extremely quickly.]
 
 To persist state across sessions, a database is necessary.
