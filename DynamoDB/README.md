@@ -1,8 +1,6 @@
 # DynamoDB
 
-![AWS DynamoDB](images/Database_AmazonDynamoDB.svg)
-
-![AWS DynamoDB Accelerator (DAX)](images/Database_AmazonDynamoDBAccelerator.svg)
+![AWS DynamoDB](images/Database_AmazonDynamoDB.svg) ![AWS DynamoDB Accelerator (DAX)](images/Database_AmazonDynamoDBAccelerator.svg)
 
 [This information is correct as of January 5, 2018 but things change rapidly in the cloud and documentation becomes out-of-date extremely quickly.]
 
