@@ -4,13 +4,13 @@
 
 [This information is correct as of January 5, 2018 but things change rapidly in the cloud and documentation becomes out-of-date extremely quickly.]
 
-To persist state across sessions, a database is necessary.
+Lambda functions are essentially stateless. To persist state across sessions, a file system or a database is necessary.
 
-UPDATE: As of April, 2019 it looks like the Alexa-hosted Skills beta offering allows for S3 as an option:
+The option of choice used to be DynamoDB, but as of April 2019 the Alexa-hosted Skills beta offering also allows for S3 as an option:
 
     http://developer.amazon.com/docs/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html
 
-DynamoDB is not expensive, but it's not free either.
+DynamoDB is not expensive, but it's not free either. And it now offers [Global Tables](http://aws.amazon.com/dynamodb/global-tables/).
 
 On the other hand, DynamoDB integration with node.js is relatively painless.
 
@@ -92,5 +92,6 @@ For more on Werner Vogels:
 ## To Do
 
 - [x] Add a link for the ASK SDK v2 DynamoDB Persistence Adapter
+- [ ] Investigate DynamoDB Global Tables
 - [ ] Investigate DynamoDB Alerts
 - [ ] Investigate Auto-Scaling
