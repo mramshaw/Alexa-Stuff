@@ -650,14 +650,14 @@ Language variations appear to be routed as follows:
 Language|variant|Routed to
 --------|-------|---------
 English|en-AU|N. Virginia / Tokyo
-"|en-CA|N. Virginia
-"|en-GB|N. Virginia / Ireland
-"|en-IN|N. Virginia / Ireland
-"|en-US|N. Virginia
+ "|en-CA|N. Virginia
+ "|en-GB|N. Virginia / Ireland
+ "|en-IN|N. Virginia / Ireland
+ "|en-US|N. Virginia
 French|fr-CA|N. Virginia
-"|fr-FR|Ireland
+ "|fr-FR|Ireland
 Spanish|es-MX|N. Virginia
-"|es-SP|Ireland
+ "|es-SP|Ireland
 
 [Sorted alphabetically]
 
@@ -699,7 +699,7 @@ issue with some French copy that had previously passed muster (along with some o
 As VUIs (Voice User Interfaces) continue to gain acceptance, it essential that the quality
 of the user experience continues to improve. [After some back and forth, the skill was in
 the end certified on April 24, 2019 - however, this was a pre-existing skill to which I was
-mainly adding support for Spanish.]
+mainly adding support for [Spanish](#spanish).]
 
 #### Monitoring and Versioning
 
