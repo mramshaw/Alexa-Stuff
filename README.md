@@ -83,6 +83,7 @@ And now in Spanish (Hechos de la alergia al maní):
 * [Privacy](#privacy)
     * [medium.com](#mediumcom)
     * [bloomberg.com](#bloombergcom)
+* [Ethics](#ethics)
 * [Icons](#icons)
 * [Python](#python)
 * [To Do](#to-do)
@@ -767,9 +768,14 @@ Even so, follow the link for an interesting read about
 __tl;dr__ Information is contextual and nuanced, and relying verbatim on either of these
 devices is problematic. Note that the article is slightly dated, being from ___2017___.
 
+As of the time of this writing (April 2019) Amazon is apparently leading Google with 15,000+ skills, but as the Google
+Assistant features a completely different integration model and marketplace this is probably not significant. [Google
+actively curates its content, so that it's actions do not need to be actively installed - unlike Alexa skills, which
+need to be individually ___enabled___.]
+
 There are extrinsic factors as well; Alexa can tie into the whole Amazon buying experience (as in: "Alexa, where are my
-shipments?") while Google can integrate with the entire Google platform (as in: "What's on my calendar?" - which ties into
-Google Calendar).
+shipments?") - and for entertainment purposes can also tie into Amazon Prime - while Google can integrate with the entire
+Google platform (as in: "What's on my calendar?" - which ties into Google Calendar).
 
 To see available Google Actions, check out:
 
@@ -786,8 +792,9 @@ Alexa Echo|Google Home
 Alexa Echo Plus|no Google equivalent (as far as I know)
 Alexa Show|Google Home Hub
 
-The smallest devices are fine for voice interaction, but not so great for listening to music. The mid-range devices feature much
-better speakers (and so are better for listening to music), while the high-end devices also have display surfaces.
+The smallest devices are fine for voice interaction, but not so great for listening to music (although newer Alexa
+Dot devices have an audio-out jack). The mid-range devices feature better speakers (and so are better for listening
+to music), while the high-end devices also have display surfaces.
 
 ## UX for Voice
 
@@ -844,6 +851,24 @@ From:
 
 The article is well worth a read as it gives quite a lot of background on Amazon
 and their voice training practices.
+
+## Ethics
+
+For techies and tech companies, the ability to be able to do something has usually out-weighed ethical considerations.
+
+[This has been a long-term thing, with science and technology generally out-pacing legal and ethical considerations.]
+
+Just as ethics is a growing concern in the machine learning world, so it is also becoming important in the voice world,
+and not simply from a [privacy](#privacy) perspective either. As the following Fortune article should make clear, failing
+to take into account ethical considerations can be expensive - if not in a purely legal sense, then in a brand,
+market-share or professional prestige way:
+
+    http://fortune.com/2018/05/11/google-duplex-virtual-assistant-ethical-issues-ai-machine-learning/
+
+> As prominent sociologist Zeynep Tufekci [put it](http://twitter.com/zeynep/status/994233568359575552):
+> “Google Assistant making calls pretending to be human not only without disclosing that it’s a bot, but
+> adding ‘ummm’ and ‘aaah’ to deceive the human on the other end with the room cheering it… horrifying.
+> Silicon Valley is ethically lost, rudderless and has not learned a thing.”
 
 ## Icons
 
