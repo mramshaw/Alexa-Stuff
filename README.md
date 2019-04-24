@@ -637,14 +637,14 @@ Language variations appear to be routed as follows:
 Language|variant|Routed to
 --------|-------|---------
 English|en-AU|N. Virginia / Tokyo
-|en-CA|N. Virginia
-|en-GB|N. Virginia / Ireland
-|en-IN|N. Virginia / Ireland
-|en-US|N. Virginia
+"|en-CA|N. Virginia
+"|en-GB|N. Virginia / Ireland
+"|en-IN|N. Virginia / Ireland
+"|en-US|N. Virginia
 French|fr-CA|N. Virginia
-|fr-FR|Ireland
+"|fr-FR|Ireland
 Spanish|es-MX|N. Virginia
-|es-SP|Ireland
+"|es-SP|Ireland
 
 [Sorted alphabetically]
 
@@ -719,7 +719,7 @@ Good demographic data for Alexa is hard to come by, this is all I could find:
 
 #### Swag
 
-I got an email March 8th that my skill had had more than 100 unique customers within 30 days of publication and therefore
+I got an email March 8th, 2018 that my skill had had more than 100 unique customers within 30 days of publication and therefore
 qualified for the January Echo Dot promotion. My free Alexa Dot showed up ___about a half-hour later___ (now that's shipping!).
 
 Still no custom developer hoodie though. UPDATE: I got an email March 29th that my custom hoodie had been shipped.
@@ -728,6 +728,10 @@ And it eventually showed up April 2nd (it was addressed to ALEXA DEVELOPER MARTI
 ![Swag](/Images/Swag.png)
 
 Alexa Dot on the left, custom hoodie in the background. If you do not have a Wi-Fi router (right, not free) you will need one.
+
+UPDATE: As of April 2019 it seems that Amazon have largely dropped free developer swag, although they still feature occasional
+competitions. Google seem to be playing catch-up however, as they offer t-shirts as well as Google Home devices for qualifying
+new Actions. [Both companies offer free credits, although once again Google's offering seems to be more generous.]
 
 #### Alexa versus Google’s Assistant
 
