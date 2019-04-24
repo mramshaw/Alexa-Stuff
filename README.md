@@ -64,6 +64,7 @@ Or my latest Skill (Peanut Allergy Facts):
     * [Account Linking](#account-linking)
     * [Permissions](#permissions)
     * [Endpoints](#endpoints)
+    * [Routing](#routing)
 * [Publishing, operations and the competition](#publishing-operations-and-the-competition)
     * [Certification](#certification)
     * [Monitoring and Versioning](#monitoring-and-versioning)
@@ -159,6 +160,11 @@ Alexa devices have always supported English but now (since March 2018) support o
     http://developer.amazon.com/docs/custom-skills/develop-skills-in-multiple-languages.html
 
 However, developing for languages other than English still seems a little problematic.
+
+Language configuration is at the Alexa device level, so it is possible to have different Alexa
+devices converse in different languages - for instance English AND French (but it will perhaps
+be a good idea to have them respond to different [wake words](#wake-word) so as to save any
+confusion).
 
 ##### French
 
@@ -338,10 +344,14 @@ Although there are many language options in terms of writing Lambda functions, i
 my opinion __Node.js__ is possibly the best choice at present - both for example
 code and support from the AWS Lambda functions dashboard.
 
+Amazon announced Node.js version 8 on April 2nd, 2018:
+
+   http://aws.amazon.com/blogs/compute/node-js-8-10-runtime-now-available-in-aws-lambda/
+
 One problem with coding in the Cloud is the necessity to upgrade software according
 to a Cloud Provider's timetable. For instance, I received an email from Amazon on
-March 24th warning me that __Node.js version 6__ would be declared End-of-Life (EOL)
-on April 2019 (this can be as simple as selecting a different Node.js runtime).
+March 24th 2019 warning me that __Node.js version 6__ would be declared End-of-Life
+(EOL) on April 2019 (this can be as simple as selecting a different Node.js runtime).
 [I also received a follow-up email on April 16th. Kudos to Amazon.]
 
 As Node.js has the largest attack surface and greatest number of exploits of any
@@ -539,6 +549,12 @@ into the `Filter events` text box (sadly these must be typed in __each and every
 a better way to do this is to use CloudWatch Logs Insights and then create a custom
  __Cloudwatch Dashboard__).
 
+Amazon published a useful blog post on November 27, 2018 introducing Cloudwatch Logs Insights:
+
+    http://aws.amazon.com/blogs/aws/new-amazon-cloudwatch-logs-insights-fast-interactive-log-analytics/
+
+[Note that Cloudwatch Logs Insights will incur usage charges based upon the amount of log data.]
+
 Amazon provides useful query examples, both in the Cloudwatch Insights console as well as at:
 
     http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-examples.html
@@ -559,6 +575,8 @@ fields @message |
 filter @message like /Exception/
 ```
 
+In my experience CloudWatch Logs Insights includes deleted log entries.
+
 Due to the voluminous billing details, the urge to log each and every interesting user
 interaction is probably to be avoided. Even so, for debugging reasons it is important to
 log every __significant__ event (user responses, unhandled events, enough life cycle events
@@ -568,7 +586,6 @@ be careful about what gets logged - for privacy reasons, if not just to reduce c
 Of course, it is entirely possible to create a simple skill (such as a Facts skill) that
 does not require debugging, in which case the performance statistics available from the
 [AWS Lambda console](http://console.aws.amazon.com/lambda/) may be sufficient.
-
 
 #### Account Linking
 
@@ -596,11 +613,13 @@ Far East|Asia-Pacific (Tokyo)|ap-northeast-1|Tokyo
 [The `Endpoints` panel on the Alexa Developer Console provides popups that show recommendations.
  You are limited to regions that provide Lambda functions (initially only North Virginia) - here
  I have chosen to make my default region Oregon (i.e. on the West Coast) for content distribution
- purposes but North Virginia might be a better choice.]
+ purposes but North Virginia might be a better choice. UPDATE: With all of the endpoints specified
+ the default endpoint does not seem to ever be invoked - or at least that has been my experience.]
 
 Bear in mind that any needed ancillary resources (S3, DynamoDB tables) must also be duplicated
 to all appropriate regions. For databases, the thorny issue of whether or not to replicate the
-databases across regions needs to be considered.
+databases across regions needs to be considered (for DynamoDB this might be as simple as using a
+[DynamoDB Global Table](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html)).
 
 Interestingly enough, IAM permissions are the exception as they are __Global__ (i.e. apply to
 all regions). Following best practices such as ___Least Privilege___, this means provisioning
@@ -610,6 +629,24 @@ and allocating separate IAM policies and roles for each region.
 
 With some jiggery-pokery, the Endpoints panel can be used to test each and every Lambda function
 (endpoint), but the Alexa model must be saved & rebuilt every time the endpoints are changed.
+
+#### Routing
+
+Language variations appear to be routed as follows:
+
+Language|variant|Routed to
+--------|-------|---------
+English|en-AU|N. Virginia / Tokyo
+|en-CA|N. Virginia
+|en-GB|N. Virginia / Ireland
+|en-IN|N. Virginia / Ireland
+|en-US|N. Virginia
+French|fr-CA|N. Virginia
+|fr-FR|Ireland
+Spanish|es-MX|N. Virginia
+|es-SP|Ireland
+
+[Sorted alphabetically]
 
 ## Publishing, operations and the competition
 
@@ -694,11 +731,44 @@ Alexa Dot on the left, custom hoodie in the background. If you do not have a Wi-
 
 #### Alexa versus Google’s Assistant
 
-Follow the link for an interesting read about
+The first distinction to make when comparing the offerings from Amazon and Google is to differentiate between the ___software___
+(i.e. the capabilities of the devices - such as `Skills` or `Actions`) and the ___hardware___ (meaning the devices themselves,
+such as the `Alexa Dot` / `Alexa Echo` / `Alexa Echo Plus` / `Alexa Show` - and the `Google Home Mini` / `Google Home` /
+`Google Home Hub`).
+
+While the __devices__ largely offer much the same features (different designer colours, similiar form factors and sound quality),
+differing slightly on price and aesthetics, the two offerings are somewhat different in terms of their software capabilities, but
+not so much that - in this highly-charged competitive market - either offering has a significant advantage. And the situation can
+only be expected to evolve (and probably rapidly, given that it's a huge market). In short, any comparisons between them must be
+taken with a grain of salt, given that the situation is very fluid.
+
+Even so, follow the link for an interesting read about
 [Amazon’s Alexa vs. Google’s Assistant](http://gigaom.com/2017/06/12/amazons-alexa-vs-googles-assistant-same-questions-different-answers/).
 
 __tl;dr__ Information is contextual and nuanced, and relying verbatim on either of these
-devices is problematic.
+devices is problematic. Note that the article is slightly dated, being from ___2017___.
+
+There are extrinsic factors as well; Alexa can tie into the whole Amazon buying experience (as in: "Alexa, where are my
+shipments?") while Google can integrate with the entire Google platform (as in: "What's on my calendar?" - which ties into
+Google Calendar).
+
+To see available Google Actions, check out:
+
+    http://assistant.google.com/explore
+
+[However, be aware that these actions may not be available in all languages or all regions.]
+
+The devices roughly correspond as follows:
+
+Amazon|Google
+------|------
+Alexa Dot|Google Home Mini
+Alexa Echo|Google Home
+Alexa Echo Plus|no Google equivalent (as far as I know)
+Alexa Show|Google Home Hub
+
+The smallest devices are fine for voice interaction, but not so great for listening to music. The mid-range devices feature much
+better speakers (and so are better for listening to music), while the high-end devices also have display surfaces.
 
 ## UX for Voice
 
@@ -786,6 +856,7 @@ Some sample Python code
 - [x] Investigate [Alexa-hosted Skills](http://developer.amazon.com/docs/hosted-skills/build-a-skill-end-to-end-using-an-alexa-hosted-skill.html)
 - [x] Investigate __SessionEndedRequest__
 - [x] Investigate Internationalization (i18n) and Localization (L10n)
-- [x] Investigate Alexa’s French voice
+- [x] Investigate Alexa’s French voices
 - [x] Investigate Alexa’s Spanish voices
 - [x] Investigate Google’s Assistant
+- [x] Investigate Google Actions
