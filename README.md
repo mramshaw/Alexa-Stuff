@@ -34,11 +34,11 @@ Or my latest Skill (Peanut Allergy Facts):
 
 Also in French (Faits sur l'allergie aux arachides):
 
-    http://www.amazon.fr/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K
+    http://www.amazon.fr/dp/B07GB4BG4K
 
 And now in Spanish (Hechos de la alergia al maní):
 
-    http://www.amazon.es/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K
+    http://www.amazon.es/dp/B07GB4BG4K
 
 ## Contents
 
@@ -186,7 +186,7 @@ typos and grammatical errors. Any errors will result in a certification failure.
 
 Check out the French version of my Peanut Allergy Facts skill (Faits sur l'allergie aux arachides):
 
-    http://www.amazon.fr/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K
+    http://www.amazon.fr/dp/B07GB4BG4K
 
 Interestingly, for addressing Alexa devices Amazon prefer the familiar ___tu___ form over the
 more formal ___vous___ form. Using ___vous___ forms in either the launch phrases or the skill
@@ -221,7 +221,7 @@ a personal thing.
 
 Check out the Spanish version of my Peanut Allergy Facts skill (Hechos de la alergia al maní):
 
-    http://www.amazon.es/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K
+    http://www.amazon.es/dp/B07GB4BG4K
 
 ## So what's it good for?
 
@@ -697,7 +697,9 @@ or 12 business days (almost twice as long as a few years ago - but also featured
 variations). The initial rejection came April 15 (so about four calendar days) - and took
 issue with some French copy that had previously passed muster (along with some other things).
 As VUIs (Voice User Interfaces) continue to gain acceptance, it essential that the quality
-of the user experience continues to improve.
+of the user experience continues to improve. [After some back and forth, the skill was in
+the end certified on April 24, 2019 - however, this was a pre-existing skill to which I was
+mainly adding support for Spanish.]
 
 #### Monitoring and Versioning
 
