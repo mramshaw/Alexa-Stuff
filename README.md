@@ -32,6 +32,14 @@ Or my latest Skill (Peanut Allergy Facts):
 
     http://www.amazon.com/dp/B07GB4BG4K
 
+Also in French (Faits sur l'allergie aux arachides):
+
+    http://www.amazon.fr/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K
+
+And now in Spanish (Hechos de la alergia al maní):
+
+    http://www.amazon.es/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K
+
 ## Contents
 
 * [NLP](#nlp)
@@ -176,7 +184,7 @@ voice is far better than any of Alexa's English voices.
 When you submit your skill for certification, the French copy will be carefully vetted for
 typos and grammatical errors. Any errors will result in a certification failure.
 
-Check out the French version of my Peanut Allergy Facts skill:
+Check out the French version of my Peanut Allergy Facts skill (Faits sur l'allergie aux arachides):
 
     http://www.amazon.fr/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K
 
@@ -208,7 +216,12 @@ Alexa has voices for Spanish, both for es-ES (Spain) and es-MX (Mexico).
 As with [French](#french), Amazon prefer the familiar ___tú___ form over the more formal ___usted___ form.
 Use of the formal forms in either the launch phrases or the skill copy will result in the skill being rejected.
 
-To my ear, neither of them is of the same quality as the French voices, but that may be a personal thing.
+To my ear, neither of these Spanish voices is of the same quality as the French voices, but that may be
+a personal thing.
+
+Check out the Spanish version of my Peanut Allergy Facts skill (Hechos de la alergia al maní):
+
+    http://www.amazon.es/Martin-Ramshaw-Peanut-Allergy-Facts/dp/B07GB4BG4K
 
 ## So what's it good for?
 
