@@ -651,14 +651,14 @@ Language variations appear to be routed as follows:
 Language|variant|Routed to
 --------|-------|---------
 English|en-AU|N. Virginia / Tokyo
- "|en-CA|N. Virginia
- "|en-GB|N. Virginia / Ireland
- "|en-IN|N. Virginia / Ireland
- "|en-US|N. Virginia
+English|en-CA|N. Virginia
+English|en-GB|N. Virginia / Ireland
+English|en-IN|N. Virginia / Ireland
+English|en-US|N. Virginia
 French|fr-CA|N. Virginia
- "|fr-FR|Ireland
+French|fr-FR|Ireland
 Spanish|es-MX|N. Virginia
- "|es-SP|Ireland
+Spanish|es-SP|Ireland
 
 [Sorted alphabetically]
 
@@ -750,6 +750,8 @@ competitions. Google seem to be playing catch-up however, as they offer t-shirts
 new Actions. [Both companies offer free credits, although once again Google's offering seems to be more generous.]
 
 #### Alexa versus Google’s Assistant
+
+[I have also looked into [Google Assistant](https://github.com/mramshaw/Google-Assistant), although not yet as deeply as Alexa.]
 
 The first distinction to make when comparing the offerings from Amazon and Google is to differentiate between the ___software___
 (i.e. the capabilities of the devices - such as `Skills` or `Actions`) and the ___hardware___ (meaning the devices themselves,
@@ -869,6 +871,8 @@ market-share or professional prestige way:
 > “Google Assistant making calls pretending to be human not only without disclosing that it’s a bot, but
 > adding ‘ummm’ and ‘aaah’ to deceive the human on the other end with the room cheering it… horrifying.
 > Silicon Valley is ethically lost, rudderless and has not learned a thing.”
+
+[The above quote is from the preceding Fortune article.]
 
 ## Icons
 
