@@ -1,7 +1,5 @@
 # Alexa-Stuff
 
-![Alexa Icon](/Images/alexaLogo2x._V516058141_.png)
-
 ![Alexa Icon](/Images/Amazon_Alexa_logo_115x790.svg)
 
 As a game developer, I've experimented with TTS (Text to Speech) systems such as
