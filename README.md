@@ -84,6 +84,7 @@ And now in Spanish (Hechos de la alergia al maní):
     * [medium.com](#mediumcom)
     * [bloomberg.com](#bloombergcom)
 * [Ethics](#ethics)
+* [Alexa in the media](#alexa-in-the-media)
 * [Icons](#icons)
 * [Python](#python)
 * [To Do](#to-do)
@@ -873,6 +874,16 @@ market-share or professional prestige way:
 > Silicon Valley is ethically lost, rudderless and has not learned a thing.”
 
 [The above quote is from the preceding Fortune article.]
+
+## Alexa in the media
+
+You know Alexa is mainstream when Saturday Night Live parodies it:
+
+    http://www.youtube.com/watch?v=YvT_gqs5ETk
+
+Here is a UK advertisement:
+
+    http://www.youtube.com/watch?v=sulDcHJzcB4
 
 ## Icons
 
