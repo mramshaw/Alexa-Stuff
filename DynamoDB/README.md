@@ -4,7 +4,9 @@
 
 [This information is correct as of January 5, 2018 but things change rapidly in the cloud and documentation becomes out-of-date extremely quickly.]
 
-Lambda functions are essentially stateless. To persist state across sessions, a file system or a database is necessary.
+Lambda functions are ___stateless___. Session data persists within Alexa sessions, but this is an Alexa thing - NOT a Lambda thing.
+
+To persist state across Alexa sessions (or any other type of sessions), a file system or a database is necessary.
 
 The option of choice used to be DynamoDB, but as of April 2019 the Alexa-hosted Skills beta offering also allows for S3 as an option:
 
@@ -81,7 +83,11 @@ A nice article on the use case for DynamoDB:
 
 ![AWS Databases compared](images/databases.png)
 
-[This image is from the preceding article.]
+Note that DynamoDB is listed as both a "Key-value" AND a "Document" database.
+
+DynamoDB is also sometimes referred to as `Tables-as-a-Service`.
+
+[The image is from the preceding article.]
 
 ## Other links
 
@@ -92,6 +98,7 @@ For more on Werner Vogels:
 ## To Do
 
 - [x] Add a link for the ASK SDK v2 DynamoDB Persistence Adapter
+- [x] Clarify Alexa session retention versus Lambda statelessness
 - [ ] Investigate DynamoDB Global Tables
 - [ ] Investigate DynamoDB Alerts
 - [ ] Investigate Auto-Scaling
