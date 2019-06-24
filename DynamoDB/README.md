@@ -89,6 +89,10 @@ DynamoDB is also sometimes referred to as `Tables-as-a-Service`.
 
 [The image is from the preceding article.]
 
+DynamoDB Accelerator goes GA:
+
+    http://www.allthingsdistributed.com/2017/06/amazon-dynamodb-accelerator-dax.html
+
 ## Other links
 
 For more on Werner Vogels:
