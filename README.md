@@ -637,8 +637,9 @@ databases across regions needs to be considered (for DynamoDB this might be as s
 [DynamoDB Global Table](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html)).
 
 Interestingly enough, IAM permissions are the exception as they are __Global__ (i.e. apply to
-all regions). Following best practices such as ___Least Privilege___, this means provisioning
-and allocating separate IAM policies and roles for each region.
+all regions). Following security best practices such as the
+[Principle of least privilege](http://en.wikipedia.org/wiki/Principle_of_least_privilege),
+this means provisioning and allocating separate IAM policies and roles for each region.
 
 [Cloudwatch Dashboards are also Global, so that once defined they are available in all regions.]
 
