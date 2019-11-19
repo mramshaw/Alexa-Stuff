@@ -83,6 +83,7 @@ And now in Spanish (Hechos de la alergia al maní):
 * [Privacy](#privacy)
     * [medium.com](#mediumcom)
     * [bloomberg.com](#bloombergcom)
+    * [wired.com](#wiredcom)
 * [Ethics](#ethics)
 * [Alexa in the media](#alexa-in-the-media)
 * [Icons](#icons)
@@ -855,6 +856,46 @@ From:
 
 The article is well worth a read as it gives quite a lot of background on Amazon
 and their voice training practices.
+
+#### wired.com
+
+It is routine to have human experts review audio snippets to ensure accurate STT transcription.
+
+This is not without some troubling aspects:
+
+> Google paused human audio review worldwide in July after reports that a contractor was leaking audio snippets in Dutch.
+
+Despite the headline of the article, this is not just a Google issue.
+
+Apple:
+
+> About three weeks after Google paused audio snippet review, Apple did as well on August 2.
+
+Amazon:
+
+> Amazon ... offers the option for users to opt-out of sharing audio clips for transcription.
+> The company launched a dedicated "Alexa Privacy Hub" in May and added the voice command,
+> "Alexa, delete everything I said today," soon after.
+
+Microsoft:
+
+> Microsoft said at the end of August that it no longer uses human review for audio snippets
+
+Facebook:
+
+> Facebook said that it would stop human review on audio from Messenger
+
+And:
+
+> All the major smart assistant developers maintain that audio snippets are fully anonymized
+> before they go out to reviewers and most specifically say that less than one percent of total
+> interactions with smart assistants actually get reviewed by a person.
+
+All from:
+
+    http://www.wired.com/story/google-assistant-human-transcription-privacy/
+
+[Wired specializes in stories about technology that are not overly technical. Well worth a read.]
 
 ## Ethics
 
