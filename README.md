@@ -901,7 +901,12 @@ All from:
 
 For techies and tech companies, the ability to be able to do something has usually out-weighed ethical considerations.
 
-[This has been a long-term thing, with science and technology generally out-pacing legal and ethical considerations.]
+[This has been a long-term trend, with science and technology generally out-pacing legal and ethical considerations.
+ However, legislation can be relied upon to eventually catch up to technology. Rather than having to expensively
+ retrofit privacy safeguards into an existing product strategy, it behooves innovators to behave proactively and
+ consider legal and ethical concerns from the outset. This can be an effective differentation strategy, and very
+ possibly an effective means of securing a competitive advantage. The end result might very possibly be a
+ corporate privacy policy.]
 
 For those interested in such things, the contrasting ethical frameworks are [Deontology](http://en.wikipedia.org/wiki/Deontological_ethics)
 and [Utilitarianism](http://en.wikipedia.org/wiki/Utilitarianism). Deontology is the idea that an action is either
