@@ -906,15 +906,21 @@ For techies and tech companies, the ability to be able to do something has usual
  retrofit privacy safeguards into an existing product strategy, it behooves innovators to behave proactively and
  consider legal and ethical concerns from the outset. This can be an effective differentation strategy, and very
  possibly an effective means of securing a competitive advantage. The end result might very possibly be a
- corporate privacy policy.]
+ corporate privacy policy. And then of course there is the troubling issue of [affinity groups](http://en.wikipedia.org/wiki/Affinity_group).]
+
+While legal considerations concern themselves with the ___law___ (and can be considered to be the minimum requirement),
+ethical considerations go above and beyond and are generally concerned with ___morality___. Just because something
+is __legal__ does not necessarily mean it is __moral__. While legal penalties can include fines and prohibitions,
+ethical penalties can include loss of consumer confidence, goodwill, market share and revenue.
 
 For those interested in such things, the contrasting ethical frameworks are [Deontology](http://en.wikipedia.org/wiki/Deontological_ethics)
 and [Utilitarianism](http://en.wikipedia.org/wiki/Utilitarianism). Deontology is the idea that an action is either
 right or wrong, and can be assessed on that basis. For instance, respecting a customer's right to privacy. Utilitarianism
 is what is known as a [consequentialist theory](http://en.wikipedia.org/wiki/Consequentialism) - in that actions can be
-evaluated in terms of their __consequences__ - and can broadly be categorized as 'the end justifies the means'. For instance,
-the idea that the benefits of aggregating a properly-anonymized collection of user utterances outweighs the costs of a
-number of violations of customer privacy (these things generally seem to be framed in terms of cost-benefit analysis).
+evaluated in terms of their __consequences__ - and can broadly be categorized as ___the end justifies the means___.
+For instance, the idea that the benefits of aggregating a properly-anonymized collection of user utterances outweighs
+the costs of a number of violations of customer privacy (these things generally seem to be framed in terms of cost-benefit
+analysis).
 
 Just as ethics is a growing concern in the machine learning world, so it is also becoming important in the voice world,
 and not simply from a [privacy](#privacy) perspective either. As the following Fortune article should make clear, failing
