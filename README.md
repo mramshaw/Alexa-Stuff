@@ -816,7 +816,13 @@ which is a much older technology.
 ## Privacy
 
 There are some troubling privacy aspects to having voice devices in your household or
-place of work. Now that adoption of these devices has become widespread the situation
+place of work. Here is an interesting video from Vox about some of the implications:
+
+    http://www.youtube.com/watch?v=IUEN2TAqlmU
+
+[The video was posted on Dec 28, 2020.]
+
+Now that adoption of voice-activated devices has become widespread the situation
 can only be expected to evolve.
 
 One or two interesting quotes follow.
